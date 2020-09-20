@@ -1,10 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Holding Hands</h1>
+      <Home />
+      <Footer />
     </div>
   );
 }
