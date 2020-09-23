@@ -1,13 +1,12 @@
-import React from "react";
-import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
+import React from 'react';
+
+import Landing from './pages/landing'
+
+import './assets/global.css';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <Footer />
-    </div>
+    <Landing/>
   );
 }
 

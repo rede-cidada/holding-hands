@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --background-primary: #009FFD;
+    --background-secondary: #0370af;
+    --color-primary: #F9F9F9;
+    --background-btn: #FCBA04;
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
