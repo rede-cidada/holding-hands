@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
-:root{
-    --background-primary: #009FFD;
-    --background-secondary: #0370af;
-    --color-primary: #F9F9F9;
-    --background-btn: #FCBA04;
-    
+:root {
+    font-size: 60%;
 
+    --background-primary: #009FFD;
+    --background-secondary: #067bbe;
+    --color-primary: #F9F9F9;
+    --color-basic: #000;
+    --background-btn-landing: #FCBA04;
+    --background-btn-user: #0b5681;
+    --background-btn-idea: #862d2d;
+    --background-idea: #c24c4c;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

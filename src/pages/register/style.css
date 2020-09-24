@@ -1,0 +1,115 @@
+.register-container {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+    color: var(--color-primary);
+    background: var(--background-primary);
+    overflow: hidden;
+    padding: 1% 0;
+
+    font-size: 1.5rem;
+    font-family: Poppins, sans-serif;
+}
+
+.register-user {
+    width: 93%;
+    height: 47%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 20px;
+    padding: 5% 10%;
+    background: var(--background-secondary);
+}
+
+.register-idea {
+    width: 93%;
+    height: 47%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+    border-radius: 20px;
+    padding: 5% 10%;
+    background: var(--background-idea);
+}
+
+.icon-register {
+    width: 4.5rem;
+}
+
+.btn-register {
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: Archivo, sans-serif;
+    border: none;
+    border-radius: 15px;
+    color: var(--color-primary);
+    background: var(--color-primary);
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-register:hover {
+    border: 2px solid var(--color-primary);
+}
+
+.btn-user {
+    width: 13rem;
+    background: var(--background-btn-user);
+}
+
+.btn-idea {
+    width: 17rem;
+    background: var(--background-btn-idea);
+}
+
+@media (min-width: 700px) {
+    .register-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+    }
+
+    .register-user {
+        width: 46%;
+        height: 98%;
+        padding: 9.5% 5%;
+    }
+
+    .register-idea {
+        width: 46%;
+        height: 98%;
+        padding: 10% 5%;
+    }
+
+    .icon-register {
+        width: 6rem;
+    }
+
+    .btn-register {
+        height: 6rem;
+        font-size: 2rem;
+    }
+
+    .btn-user {
+        width: 20rem;
+    }
+    
+    .btn-idea {
+        width: 25rem;
+    }
+}
