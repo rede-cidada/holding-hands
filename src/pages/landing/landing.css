@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Ranchers&display=swap');
+
+:root{
+    --background-primary: #009FFD;
+    --background-secondary: #0370af;
+    --color-primary: #F9F9F9;
+    --background-btn: #f8b33b;
+    --background-btn-light: #eea322;
+    --background-btn-secondary: #fb6567;
+    --background-btn-secondary-light: #f85053;
+
+    font-size: 100%;
+}
+
+
+body{
+    background: var(--background-primary);
+}
+
+.landing-container{
+    width: 90vw;
+    max-width: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-bar{
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.item-user{
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 3px 4px 0px 4px;
+}
+
+.nav-bar .nav-bar-itens img{
+    width: 20px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 15px 0;
+
+    font: 500 1.8rem MuseoModerno;
+    color: var(--color-primary);
+}
+
+.logo-container img{
+    width: 4rem;
+}
+
+.landing-background{
+    display: none;
+}
+
+.landing-container p{
+    margin: 1rem 2rem;
+    font: 400 0.8rem Archivo;
+    color: var(--color-primary);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.btn-container a{
+    width: 12rem;
+    height: 4rem;
+
+    border-radius: 9px;
+
+    font: 700 1.2rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: var(--color-primary);
+
+    transition: background 0.4s;
+
+}
+
+.btn-container a img{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.btn-container a.btn-help{
+    background: var(--background-btn-secondary);
+}
+
+.btn-container a.btn-idea{
+    margin-top: 15px;
+    background: var(--background-btn);
+}
+
+.btn-container a.btn-help:hover{
+    background :var(--background-btn-secondary-light);
+}
+
+.btn-container a.btn-idea:hover{
+    background: var(--background-btn-light);
+}
+@media(min-width:900px){
+    .landing-container{
+
+        display: grid;
+        grid-template-areas:"logo land-back"
+                            "paragrafo land-back"
+                            "btn land-back" ;
+        
+        gap: 20px;
+    }
+
+    .logo-container{
+        font-size: 2.5rem;
+        grid-area: logo;
+        justify-content: flex-start;
+    }
+
+    .landing-container p{
+        grid-area: paragrafo;
+
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .btn-container{
+        grid-area: btn;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .btn-container a.btn-idea{
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .landing-background{
+        display:flex;
+        width: 23rem;
+        grid-area: land-back;
+    }
+}

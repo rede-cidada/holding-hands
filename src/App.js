@@ -6,7 +6,6 @@ import './assets/global.css';
 
 function App() {
   return (
-    <Landing/>
     <Register/>
   );
 }

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 :root {
-    font-size: 60%;
-
     --background-primary: #009FFD;
     --background-secondary: #067bbe;
     --color-primary: #F9F9F9;
@@ -17,4 +15,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
