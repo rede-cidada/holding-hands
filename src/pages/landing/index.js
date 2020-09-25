@@ -6,7 +6,7 @@ import Logo from '../../assets/image/Icon-Hoding-hands.svg'
 import LandingBackground from '../../assets/image/landing-background.svg'
 import Heart from '../../assets/image/heart.svg' 
 import Lamp from '../../assets/image/lamp.svg'
-import User from '../../assets/image/user.svg'
+import User from '../../assets/image/user.svg' 
 
 
 function Landing() {
