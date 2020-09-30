@@ -1,15 +1,15 @@
 import React from 'react';
 
-import '../landing/landing.css'
+import '../landing/landing.css';
 
-import Logo from '../../assets/img/landing/Icon-Hoding-hands.svg'
-import LandingBackground from '../../assets/img/landing/landing-background.svg'
-import Heart from '../../assets/img/landing/heart.svg'
-import Lamp from '../../assets/img/landing/lamp.svg'
-import User from '../../assets/img/landing/user.svg'
+import Logo from '../../assets/img/landing/Icon-Hoding-hands.svg';
+import LandingBackground from '../../assets/img/landing/landing-background.svg';
+import Heart from '../../assets/img/landing/heart.svg';
+import Lamp from '../../assets/img/landing/lamp.svg';
+import User from '../../assets/img/landing/user.svg';
 
 
-function Landing() {
+const Landing = () => {
     return(
         <div>
             <header>
