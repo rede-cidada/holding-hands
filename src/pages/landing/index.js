@@ -14,7 +14,7 @@ const Landing = () => {
         <div>
             <header>
                 <nav className="nav-bar">
-                    <li className="nav-bar-itens item-user"><a href=""><img src={User} alt=""/></a></li>
+                    <li className="nav-bar-itens item-user"><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"><img src={User} alt=""/></a></li>
                 </nav>
             </header>
 
@@ -29,9 +29,9 @@ const Landing = () => {
                 <img className="landing-background" src={LandingBackground} alt=""/>
 
                 <div className="btn-container">
-                        <a className="btn-help" href=""><img src={Heart} alt=""/> Quero ajudar</a>
+                        <a className="btn-help" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"><img src={Heart} alt=""/> Quero ajudar</a>
                     
-                        <a className="btn-idea" href=""><img src={Lamp} alt=""/> Divulgar ideia</a>
+                        <a className="btn-idea" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"><img src={Lamp} alt=""/> Divulgar ideia</a>
                 </div>
             </div>
 
