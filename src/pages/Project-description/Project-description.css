@@ -1,0 +1,110 @@
+body{
+    font: 700 0.8rem Archivo;
+    color: var(--color-primary);
+}
+
+.container-ProjectDescription{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container{
+    width: 98.82vw;
+    height: 15rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background-secondary);
+    background-image: url(../../assets/img/Project-description/pattern-objeto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+.title-container div{
+    width: 100%;
+    max-width: 910px;
+    padding: 0 10px;
+}
+
+.title-container h1{
+    color: var(--color-primary);
+    font: 700 2.3rem Archivo;
+}
+
+.containers{
+    width: 100%;
+    max-width: 750px;
+
+    background: var(--background-primary);
+    padding: 2.5rem 15px 0 15px;
+}
+
+.containers h2{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    padding-top: 15px ;
+}
+
+.containers p{
+    padding-left: 15px;
+}
+
+.information-projeto div{
+    width: 100%;
+    max-width: 900px;
+}
+
+.information-projeto .location{
+    display: flex;
+    align-items: center;
+}
+
+.information-projeto .location img{
+    width: 24px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container a.btn{
+    padding: 12px;
+    font-size: 1.1rem;
+
+    width: 12rem;
+    height: 3rem;
+
+    color: var(--color-primary);
+    background: var(--background-btn-user);
+
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.btn-container a.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-container a.money{
+    margin-top: 15px;
+}
+
+@media(min-width:720px){
+    .btn-container{
+        flex-direction: row;
+    }
+
+    .btn-container a.money{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+}
