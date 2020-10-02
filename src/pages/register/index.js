@@ -1,11 +1,11 @@
 import React from 'react';
-import '../register/register.css';
+import './register.css';
 import branchIcon from "../../assets/img/register/icone-galho.svg";
 import heartIcon from "../../assets/img/register/icone-coracao.png";
 
 const Register = () => {
     return (
-        <section className="register-container">            
+        <section className="register-container">        
             <div className="register-user">
                 
                 <img className="icon-register" src={branchIcon} alt="Ícone de galho com folhas."/>   
@@ -22,10 +22,10 @@ const Register = () => {
                 
                 <img className="icon-register" src={heartIcon} alt="Ícone de coração."/>
 
-                <p>Para você que quer ajudar em alguma causa social e precisa de doações ou trabalhos voluntários.
-                </p>
+                <p>Para você que quer ajudar mais alguma causa social
+                    que precisa de doações ou trabalhos voluntários.</p>
                 
-                <button className="btn-register btn-idea">Cadastrar sua ideia</button>
+                <button className="btn-register btn-idea">Faça Login</button>
             </div>
 
         </section>

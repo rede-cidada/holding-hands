@@ -1,7 +1,5 @@
 .register-container {
     width: 100vw;
-    height: 100vh;
-    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -17,9 +15,17 @@
     font-family: Poppins, sans-serif;
 }
 
+.register-container .all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .register-user {
     width: 93%;
     height: 47%;
+    margin: 15px;
 
     display: flex;
     flex-direction: column;
@@ -32,9 +38,16 @@
     background: var(--background-secondary);
 }
 
+.register-user p,
+.register-idea p{
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
 .register-idea {
     width: 93%;
     height: 47%;
+    margin: 15px;
 
     display: flex;
     flex-direction: column;
@@ -68,30 +81,35 @@
 }
 
 .btn-user {
-    width: 13rem;
+    width: 240px;
     background: var(--background-btn-user);
 }
 
 .btn-idea {
-    width: 17rem;
+    width: 240px;
     background: var(--background-btn-idea);
 }
 
 @media (min-width: 700px) {
     .register-container {
+        height: 100vh;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         font-size: 1.2rem;
     }
 
     .register-user {
         width: 46%;
+        max-width: 450px;
         height: 98%;
         padding: 9.5% 5%;
     }
 
     .register-idea {
         width: 46%;
+        max-width: 450px;
         height: 98%;
         padding: 10% 5%;
     }
@@ -106,10 +124,10 @@
     }
 
     .btn-user {
-        width: 17rem;
+        width: 240px;
     }
     
     .btn-idea {
-        width: 20rem;
+        width: 240px;
     }
 }
