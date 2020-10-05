@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../landing/landing.css'
+import './landing.css'
 
 import Logo from '../../assets/img/landing/Icon-Hoding-hands.svg'
 import LandingBackground from '../../assets/img/landing/landing-background.svg'

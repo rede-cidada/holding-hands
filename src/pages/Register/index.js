@@ -1,5 +1,5 @@
 import React from 'react';
-import '../register/register.css';
+import './register.css';
 import branchIcon from "../../assets/img/register/icone-galho.svg";
 import heartIcon from "../../assets/img/register/icone-coracao.png";
 
