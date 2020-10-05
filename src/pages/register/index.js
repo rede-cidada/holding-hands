@@ -3,6 +3,8 @@ import './register.css';
 import branchIcon from "../../assets/img/register/icone-galho.svg";
 import heartIcon from "../../assets/img/register/icone-coracao.png";
 
+import { Link } from 'react-router-dom';
+
 const Register = () => {
     return (
         <section className="register-container">        
@@ -14,7 +16,7 @@ const Register = () => {
                     ou ser voluntário em alguma causa social.
                 </p>
 
-                <button className="btn-register btn-user">Cadastre-se</button>
+                <Link to="/cadastro" className="btn-register btn-user">Cadastre-se</Link>
 
             </div>
 
