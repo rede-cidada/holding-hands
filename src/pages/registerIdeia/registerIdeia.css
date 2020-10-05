@@ -8,62 +8,187 @@
     --background-btn-secondary: #fb6567;
     --background-btn-secondary-light: #f85053;
 
-    font-size: 100%;
-}
-
-
-.registerIdeia-Form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: var(--background-primary);
-    
     
 }
-.registro-idea{
-    font: 300 1rem Archivo;
+.registerIdeia{
     background-color: var(--color-primary);
-    box-shadow: -3px 3px -3px -1.5px blue;
-    padding:auto;
-    justify-content: center;
-    border-radius: 15px;
+    color: black;
+    
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 98vh;
+    width: 70vw;
 }
-.registro-idea h3{
-    font-size:35px ;
-    margin-bottom: 20px;
+
+.h3{
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 15px;
 }
-.registerIdeia-Form label{
-    margin-left:10px;
+form div label{
+margin-top: 4px;
+
+text-align: left;
 }
-.registerIdeia-Form input{
-    margin-left: 50px;
+form div input{
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
-.registerIdeia-Form textarea{
-    margin-left: 30px;
+select{
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .btn-form{
-    display: flex;
-    flex-direction: row;
+    margin-top:20px
+    
 }
-.btn-form a{
-    width: 6rem;
-    height: 2rem;
-    border:solid 0.5px blue;
+.btn-voltar{
+    border: 1px solid var(--background-secondary);
+    padding: 5px;
     border-radius: 9px;
     background-color: var(--background-secondary);
-    font: 500 1.2rem Archivo;
-    color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin:10px;
+    color: white;
+    font: 400 1.2em Archivo;   
+}
+.btn-enviar{
+    border: 1px solid var(--background-secondary);
+    padding: 5px;
+    border-radius: 9px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: var(--background-secondary);
+    color: white;
+    font: 400 1.2em Archivo;
+}
+@media (min-width:720px){
+    .h3{
+        font-size: 25px;
     
+    }
+    .registro-ideia{
+        display: flex;
+        flex-direction: row;
+    }
+    .nome{
+        padding: 0px 30%;
+        justify-content: center;
+    }
+    .endereco{
+        padding: 0px 30%;
+        justify-content: center;
+    }
+    .telefone{
+        padding: 0px 30%;
+        justify-content: center;
+    }
+    .email{
+        padding: 1px 30%;
+        justify-content: center;
+    }
+    .cidade{
+        padding: 1px 30%;
+        justify-content: center;
+    }
+    .uf{
+        padding: 0px 32% 0px 30%;
+        justify-content: center;
+    }
+    .categoria{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        
+        justify-content: center;
+    }
+    .tipo-ajuda{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        
+        justify-content: center;
+    }
+    .descricao{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        
+        justify-content: center;
+        width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    }
+    input{
+      font-size: 18px;
+    }
+    label{
+        font-size: 18px;
+    }
+    .btn-form{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        
+        justify-content: center;
+    }
 
 }
-.btn-form a:hover{
-    background-color: var(--color-primary);
-    color: blue;
+@media(min-width:1440px){
+    .h3{
+        font-size: 30px;
+    
+    }
+    .registro-ideia{
+        display: flex;
+        flex-direction: row;
+    }
+    .nome{
+        padding: 0px 30%;
+        justify-content: center;
+    }
+    .endereco{
+        padding: 0px 30%;
+        justify-content: center;
+    }
+    .telefone{
+        padding: 0px 30%;
+        justify-content: center;
+    }
+    .email{
+        padding: 1px 30%;
+        justify-content: center;
+    }
+    .cidade{
+        padding: 1px 30%;
+        justify-content: center;
+    }
+    .uf{
+        padding: 0px 32% 0px 30%;
+        justify-content: center;
+    }
+    .categoria{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        
+        justify-content: center;
+    }
+    .tipo-ajuda{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        
+        justify-content: center;
+    }
+    .descricao{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+
+    }
+    input{
+      font-size: 20px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .btn-form{
+        padding: 0px 26% 0px 30%;
+        font-size: 18px;
+        justify-content: center;
+    }
 }

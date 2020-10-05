@@ -2,7 +2,6 @@ import React from 'react';
 //import Landing from './pages/landing';
 //import Register from './pages/register';
 import RegisterIdeia from './pages/registerIdeia';
-import React from 'react';
 
 import Landing from './pages/landing';
 import Register from './pages/register';
@@ -14,10 +13,10 @@ import './assets/global.css';
 
 function App() {
   return (
-    <div>
+
     <RegisterIdeia/>
-    <Landing />
-    </div>
+    
+    
   );
 }
 
