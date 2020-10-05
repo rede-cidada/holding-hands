@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../cadastro/cadastro.css'
+import './cadastro.css'
 
 
 export default function Cadastro() {

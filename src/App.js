@@ -9,14 +9,14 @@ import ProjectDescription from './pages/Project-description';
 import Cadastro from './pages/cadastro';
 import Ideas from './pages/ideas';
 
+import React from 'react';
 import './assets/global.css';
+
+import Routes from './services/routes'
 
 function App() {
   return (
-
-    <RegisterIdeia/>
-    
-    
+    <Routes/>
   );
 }
 

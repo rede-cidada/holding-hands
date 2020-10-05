@@ -12,14 +12,22 @@
     font-size: 100%;
 }
 
+.landing-all{
+    width: 100vw;
+    height: 100vh;
 
-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: var(--background-primary);
 }
 
 .landing-container{
     width: 90vw;
     max-width: 900px;
+    height: 100vh;
+    max-height: 500px;
 
     display: flex;
     justify-content: center;
@@ -34,7 +42,7 @@ li{
 .nav-bar{
     position: absolute;
     top:10px;
-    right: 10px;
+    right: 20px;
 }
 
 .item-user{
@@ -44,7 +52,7 @@ li{
 }
 
 .nav-bar .nav-bar-itens img{
-    width: 20px;
+    width: 30px;
 }
 
 .logo-container{
@@ -72,14 +80,14 @@ li{
     color: var(--color-primary);
 }
 
-.btn-container{
+.btn-container-landing{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     margin: 1.5rem 0;
 }
 
-.btn-container a{
+.btn-container-landing a{
     width: 12rem;
     height: 4rem;
 
@@ -98,25 +106,25 @@ li{
 
 }
 
-.btn-container a img{
+.btn-container-landing a img{
     width: 25px;
     margin-right: 5px;
 }
 
-.btn-container a.btn-help{
+.btn-container-landing a.btn-help{
     background: var(--background-btn-secondary);
 }
 
-.btn-container a.btn-idea{
+.btn-container-landing a.btn-idea{
     margin-top: 15px;
     background: var(--background-btn);
 }
 
-.btn-container a.btn-help:hover{
+.btn-container-landing a.btn-help:hover{
     background :var(--background-btn-secondary-light);
 }
 
-.btn-container a.btn-idea:hover{
+.btn-container-landing a.btn-idea:hover{
     background: var(--background-btn-light);
 }
 @media(min-width:900px){
@@ -143,13 +151,13 @@ li{
         justify-content: flex-start;
     }
 
-    .btn-container{
+    .btn-container-landing{
         grid-area: btn;
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    .btn-container a.btn-idea{
+    .btn-container-landing a.btn-idea{
         margin-top: 0px;
         margin-left: 15px;
     }

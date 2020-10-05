@@ -1,6 +1,8 @@
 import React from 'react';
 
-import '../landing/landing.css';
+import './landing.css';
+
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/img/landing/Icon-Hoding-hands.svg';
 import LandingBackground from '../../assets/img/landing/landing-background.svg';
@@ -11,10 +13,10 @@ import User from '../../assets/img/landing/user.svg';
 
 const Landing = () => {
     return(
-        <div>
+        <div className="landing-all">
             <header>
                 <nav className="nav-bar">
-                    <li className="nav-bar-itens item-user"><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"><img src={User} alt=""/></a></li>
+                    <li className="nav-bar-itens item-user"><Link to="/register"><img src={User} alt=""/></Link></li>
                 </nav>
             </header>
 
@@ -28,10 +30,10 @@ const Landing = () => {
                 das sad sad sadasd asl.jh a as s asf adfsda s  s shjkhdasjkhd asjk</p>
                 <img className="landing-background" src={LandingBackground} alt=""/>
 
-                <div className="btn-container">
-                        <a className="btn-help" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"><img src={Heart} alt=""/> Quero ajudar</a>
+                <div className="btn-container-landing">
+                        <Link className="btn-help" to="/ideia"><img src={Heart} alt=""/> Quero ajudar</Link>
                     
-                        <a className="btn-idea" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"><img src={Lamp} alt=""/> Divulgar ideia</a>
+                        <Link className="btn-idea" to="/register"><img src={Lamp} alt=""/> Divulgar ideia</Link>
                 </div>
             </div>
 
