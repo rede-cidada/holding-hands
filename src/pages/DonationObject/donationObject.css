@@ -1,0 +1,125 @@
+.container-donation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    padding: 0 20px;
+
+    background: var(--background-primary);
+}
+
+.form-donation{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-donation{
+    padding-top: 15px;
+    font-size: 1.7rem;
+}
+
+.object{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 15rem;
+    padding: 8px 0;
+
+}
+
+.donation-label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 12px 0;
+}
+
+.object-input{
+    width: 15rem;
+    height: 2rem;
+    background: var(--background-primary);
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 8px;
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.description-object-input{
+    width: 15rem;
+    height: 8rem;
+
+    resize: none;
+    background: var(--background-primary);
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 8px;
+    color: var(--color-primary);
+}
+
+.amount-object{
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.number-objects{
+    padding-bottom: 15px;
+}
+
+.number-objects-input{
+    width: 3rem;
+    height: 3rem;
+
+    background: var(--background-primary);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-size: 15px;
+    text-align: center;
+}
+
+.number-objects-btn{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    background: var(--background-primary);
+}
+
+.btn-form-donation{
+    width: 12rem;
+    height: 3rem;
+
+    background: var(--background-btn-secondary);
+    border-radius: 9px;
+
+    font: 700 1rem Poppins;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+    color: var(--color-primary);
+
+    transition: background 0.4s;
+}
+
+@media(min-width:720px){
+    .container-donation{
+        height: 100%;
+    }
+}

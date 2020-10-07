@@ -4,6 +4,8 @@ import {dados} from '../../Dados/projetos'
 
 import './Project-description.css'
 
+import { Link } from 'react-router-dom';
+
 const ProjectDescription = () =>{
     return(
         <div>
@@ -56,8 +58,8 @@ const ProjectDescription = () =>{
                     <div className="containers">
                         <h2>Doações</h2>
                         <div className="btn-container">
-                            <a className="btn objects">Doar objetos</a>
-                            <a className="btn money">Doar Dinheiro</a>
+                            <Link to="/Donation-objects" className="btn objects">Doar objetos</Link>
+                            <Link to="" className="btn money">Doar Dinheiro</Link>
                         </div>
                     </div>
                 </div>

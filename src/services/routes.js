@@ -4,9 +4,10 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Landing from '../pages/Landing';
 import Register from '../pages/Register';
-import Ideas from '../pages/Ideas'
-import description from '../pages/Project-description'
-import Cad from '../pages/Cadastro'
+import Ideas from '../pages/Ideas';
+import Description from '../pages/Project-description';
+import Cadastro from '../pages/Cadastro';
+import DonationObject from '../pages/DonationObject';
 
 const Routes = () =>(
     <BrowserRouter>
@@ -14,8 +15,9 @@ const Routes = () =>(
             <Route exact path="/" component={Landing}/>
             <Route path="/register" component={Register}/>
             <Route path="/ideia" component={Ideas}/>
-            <Route path="/projeto-description" component={description}/>
-            <Route path="/cadastro" component={Cad}/>
+            <Route path="/projeto-description" component={Description}/>
+            <Route path="/cadastro" component={Cadastro}/>
+            <Route path="/Donation-objects" component={DonationObject}/>
         </Switch>
     </BrowserRouter>
 );
