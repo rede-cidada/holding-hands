@@ -1,6 +1,5 @@
 import React from 'react';
 import Location from '../../assets/img/Project-description/location.svg'
-import {dados} from '../../Dados/projetos'
 
 import './Project-description.css'
 
@@ -9,23 +8,20 @@ import { Link } from 'react-router-dom';
 const ProjectDescription = () =>{
     return(
         <div>
-            {dados.map((item,index)=>
-            <div className="container-ProjectDescription" key={index}>
-                    <h2></h2>
-                    <p></p>
+            <div className="container-ProjectDescription">
                 <div className="title-container">
-                    <div><h1>{item.nome}</h1></div>
+                    <div><h1>adssasdfsgsdfgfd</h1></div>
                 </div>
 
                 <div className="container-description">
                     <div className="containers information-projeto">
                         <div>
                             <h2>Responsavel pela ONG</h2>
-                            <p>{item.responsavel}</p>
+                            <p>ssdfsdgsdgsd</p>
 
                             <h2>Endereço</h2>
                             <div className="location">
-                                <img src={Location} alt="localização"/><p>{item.endereco},{item.cidade},{item.estado}.</p>
+                                <img src={Location} alt="localização"/><p>sdfsdgsgsdggewwegsdg.</p>
                             </div>   
                         </div>
                     </div>
@@ -63,7 +59,7 @@ const ProjectDescription = () =>{
                         </div>
                     </div>
                 </div>
-            </div>)}
+            </div>
         </div>
     )
 }

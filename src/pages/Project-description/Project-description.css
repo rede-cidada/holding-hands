@@ -8,7 +8,7 @@ body{
 }
 
 .container-ProjectDescription{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body{
 }
 
 .title-container{
-    width: 100vw;
+    width: 100%;
     height: 15rem;
 
     display: flex;
@@ -91,6 +91,7 @@ body{
 }
 
 .btn-container a.btn{
+    text-decoration: none;
     padding: 12px;
     font-size: 1.1rem;
 
@@ -118,6 +119,10 @@ body{
 }
 
 @media(min-width:720px){
+    .container-ProjectDescription{
+        width: 98.7vw;
+    }
+
     .btn-container{
         flex-direction: row;
     }
