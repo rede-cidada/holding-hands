@@ -16,7 +16,8 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 2rem 0;
+    background: var(--background-secondary);
+    padding: 2rem 0 1rem 0;
 }
 
 .ideas-categories {
@@ -66,7 +67,7 @@
     align-items: center;
     justify-content: center;
 
-    background: var(--background-secondary);
+    background: var(--background-btn-user);
     border: none;
     border-radius: 0px 9px 9px 0px;
     outline: none;
@@ -90,6 +91,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    padding-top: 15px;
+    
+    background-image: url(../../assets/img/Project-description/pattern-objeto.png);
 }
 
 .project-card {
@@ -159,7 +164,9 @@
 
 @media (min-width: 900px) {
     .ideas-container {
+        width: 98.7vw;
         display: flex;
+        justify-content: flex-end;
         flex-direction: row;
     }
 
@@ -184,7 +191,7 @@
     }
 
     .project-cards {
-        width: 80%;
+        width: 75%;
         padding: 20px;
         display: flex;
         flex-direction: row;

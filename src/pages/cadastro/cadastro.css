@@ -64,6 +64,23 @@ html {
     height: 40px;
     font-size: 20px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cadastro:hover {
+    background: var(--background-btn-landing);
+}
+
+.btn-cadastro:active {
+    background: var(--background-primary);
+    color: var(--color-primary);
+}
+
+.icon-buttom {
+    width: 20px;
+    margin-right: 10px;
 }
 
 @media (max-width: 986px) {
