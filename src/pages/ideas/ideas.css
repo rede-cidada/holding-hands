@@ -164,7 +164,9 @@
 
 @media (min-width: 900px) {
     .ideas-container {
+        width: 98.7vw;
         display: flex;
+        justify-content: flex-end;
         flex-direction: row;
     }
 
@@ -189,7 +191,7 @@
     }
 
     .project-cards {
-        width: 80%;
+        width: 75%;
         padding: 20px;
         display: flex;
         flex-direction: row;

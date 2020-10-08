@@ -21,7 +21,7 @@ const DonationObject = () =>{
                 <div className="object amount-object">
                     <label className="donation-label">Quantidade</label>
                     <div className="number-objects">
-                        <button className="number-objects-btn">+</button><input className="number-objects-input"></input><button className="number-objects-btn">-</button>
+                        <button className="number-objects-btn">+</button><input type="number" className="number-objects-input"></input><button className="number-objects-btn">-</button>
                     </div>
                     
                     <button className="btn-form-donation">Concluir</button>
