@@ -1,46 +1,59 @@
 
-:root{
-    --background-primary: #009FFD;
-    --background-secondary: #0370af;
-    --color-primary: #F9F9F9;
-    --background-btn: #f8b33b;
-    --background-btn-light: #eea322;
-    --background-btn-secondary: #fb6567;
-    --background-btn-secondary-light: #f85053;
-
-    
-}
 .registerIdeia{
-    background-color: var(--color-primary);
-    color: black;
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--background-primary);
     
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    height: 98vh;
-    width: 70vw;
+
 }
+.registerIdeia-Form{
+    background-color: white;
+    color: black;
+    height: 100vh;
+    width: 80vw;
+    margin-left:30px;
+    border-radius: 10px;
+    display:grid;
+    text-align: center;
+    
+    
+}
+.div{
+    display:grid;
+    grid-template-columns: 80px  170px;
+    grid-template-rows: 30px 20px;
+    column-gap: 1px;
+    }
 
 .h3{
     text-align: center;
+    padding-top: 15px;
     margin-bottom: 4px;
     font-size: 15px;
 }
-form div label{
+.label{
 margin-top: 4px;
-
+margin-left: 20px;
 text-align: left;
 }
-form div input{
+.input{
     margin-bottom: 10px;
     margin-top: 5px;
+    margin-left: 50px;
+    border-radius: 5px;
 }
-select{
+.select{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.btn-form{
-    margin-top:20px
+#descricao{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#btn-form{
+    margin-top:20px;
+    margin-left:5px;
+    
     
 }
 .btn-voltar{
@@ -49,7 +62,8 @@ select{
     border-radius: 9px;
     background-color: var(--background-secondary);
     color: white;
-    font: 400 1.2em Archivo;   
+    font: 400 1.2em Archivo; 
+    margin-left: 20px;  
 }
 .btn-enviar{
     border: 1px solid var(--background-secondary);
@@ -61,134 +75,33 @@ select{
     color: white;
     font: 400 1.2em Archivo;
 }
-@media (min-width:720px){
+@media(min-width:720px){
     .h3{
-        font-size: 25px;
-    
-    }
-    .registro-ideia{
-        display: flex;
-        flex-direction: row;
-    }
-    .nome{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .endereco{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .telefone{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .email{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .cidade{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .uf{
-        padding: 0px 32% 0px 30%;
-        justify-content: center;
-    }
-    .categoria{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-    .tipo-ajuda{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-    .descricao{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-        width: 500px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    }
-    input{
-      font-size: 18px;
-    }
-    label{
-        font-size: 18px;
-    }
-    .btn-form{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-
-}
-@media(min-width:1440px){
-    .h3{
-        font-size: 30px;
-    
-    }
-    .registro-ideia{
-        display: flex;
-        flex-direction: row;
-    }
-    .nome{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .endereco{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .telefone{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .email{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .cidade{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .uf{
-        padding: 0px 32% 0px 30%;
-        justify-content: center;
-    }
-    .categoria{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-    .tipo-ajuda{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-    .descricao{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-
-    }
-    input{
-      font-size: 20px;
-    }
-    label{
+        margin-left: 10%;
         font-size: 20px;
+        
     }
-    .btn-form{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        justify-content: center;
+    .registerIdeia-Form{
+        
+        margin-left: 10%;
+        display:grid;
+        
+        border-radius: 10px;
+       
+
+        
+    }
+    .div{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 150px  269px;
+        grid-template-rows: 40px 10px;
+        column-gap: 1px;
+        width: 80%;
+    }
+   
+    #btn-form{
+        text-align: center;
     }
 }
+
