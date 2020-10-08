@@ -55,8 +55,8 @@ const RegisterIdeias = () => {
                         <textarea id="descricao" nome="Descricao" rows="5" cols="22"></textarea>
                     </div>
                     <div  id="btn-form">
-                        <a className="btn-voltar" to="/" >Voltar</a>
-                        <a className="btn-enviar" to="/">Cadastrar</a>
+                        <a className="btn-voltar" >Voltar</a>
+                        <a className="btn-enviar" >Cadastrar</a>
                     </div>
                     
                     
