@@ -8,6 +8,7 @@ import Ideas from '../pages/Ideas';
 import Description from '../pages/Project-description';
 import Cadastro from '../pages/Cadastro';
 import DonationObject from '../pages/DonationObject';
+import Login from '../pages/Login'
 
 const Routes = () =>(
     <BrowserRouter>
@@ -18,6 +19,7 @@ const Routes = () =>(
             <Route path="/projeto-description" component={Description}/>
             <Route path="/cadastro" component={Cadastro}/>
             <Route path="/Donation-objects" component={DonationObject}/>
+            <Route path="/Login" component={Login}/>
         </Switch>
     </BrowserRouter>
 );

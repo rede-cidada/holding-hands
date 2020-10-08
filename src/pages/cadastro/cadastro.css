@@ -4,46 +4,13 @@
     box-sizing: border-box;
 }
 
-.container-flex {
-    display: flex;
+html, body {
+    width: 100%;
+    height: 100%;
 }
- 
-.row-center {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
- 
-.column-center {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
- 
-.column-start {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
- 
-.row-around {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
- 
-.column-around {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
- 
-.wrap {
-    flex-wrap: wrap;
-}
- 
-.nowrap {
-    flex-wrap: nowrap;
+
+html {
+    background: var(--color-primary);
 }
 
 .container-cadastro {
@@ -97,6 +64,23 @@
     height: 40px;
     font-size: 20px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cadastro:hover {
+    background: var(--background-btn-landing);
+}
+
+.btn-cadastro:active {
+    background: var(--background-primary);
+    color: var(--color-primary);
+}
+
+.icon-buttom {
+    width: 20px;
+    margin-right: 10px;
 }
 
 @media (max-width: 986px) {
