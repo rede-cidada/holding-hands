@@ -1,194 +1,232 @@
 
-:root{
-    --background-primary: #009FFD;
-    --background-secondary: #0370af;
-    --color-primary: #F9F9F9;
-    --background-btn: #f8b33b;
-    --background-btn-light: #eea322;
-    --background-btn-secondary: #fb6567;
-    --background-btn-secondary-light: #f85053;
+.registerIdeia{
+ 
+    height: auto;
+    width: 100vw;
+    padding: 0 20px;
+
+    background: var(--background-primary);
+    
+
+}
+.registerIdeia-Form{
+    width: 100%;
+    height: auto;
 
     
-}
-.registerIdeia{
-    background-color: var(--color-primary);
-    color: black;
     
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    height: 98vh;
-    width: 70vw;
 }
+.registro-idea{
+    width: 100%;
+    height: auto;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div{
+    display:flex; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    padding: 3px 0;
+    }
+    
 
 .h3{
-    text-align: center;
-    margin-bottom: 4px;
-    font-size: 15px;
+    padding-top: 5px;
+    font-size: 1.7rem;
 }
-form div label{
-margin-top: 4px;
+.label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 5px 0;
+    font-family: 'Archivo', sans-serif;
+}
+.input{
+    
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--color-primary);
+    color: #161414;
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 350px;
+   
+}
 
-text-align: left;
-}
-form div input{
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-select{
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-.btn-form{
-    margin-top:20px
+#btn-form{
+    width: 12rem;
+    height: 3rem;
+
+    background: var(--background-btn-secondary-light);
+    border-radius: 9px;
+
+    font: 700 1rem Poppins;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+    color: var(--color-primary);
+
+    transition: background 0.4s;
+    
     
 }
+
 .btn-voltar{
+    background :var(--background-btn-secondary);
     border: 1px solid var(--background-secondary);
     padding: 5px;
     border-radius: 9px;
     background-color: var(--background-secondary);
     color: white;
-    font: 400 1.2em Archivo;   
+    
+    margin-left: 45px;  
 }
 .btn-enviar{
     border: 1px solid var(--background-secondary);
     padding: 5px;
     border-radius: 9px;
-    margin-left: 50px;
-    margin-top: 10px;
+    margin-left: 90px;
+    background :var(--background-btn-secondary);
+
     background-color: var(--background-secondary);
     color: white;
-    font: 400 1.2em Archivo;
+    
 }
-@media (min-width:720px){
-    .h3{
-        font-size: 25px;
+#textarea{
+    width: 250px;
+    height: 50px;
+}
+
+@media(min-width:1240px){
+    .registerIdeia{
+ 
+        height: 100vh;
+        width: 100vw;
+        padding: 0 20px;
+    
+        background: var(--background-primary);
+        
     
     }
-    .registro-ideia{
+    .registro-idea{
+        width: 100%;
+        height: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    .nome{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .endereco{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .telefone{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .email{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .cidade{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .uf{
-        padding: 0px 32% 0px 30%;
-        justify-content: center;
-    }
-    .categoria{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
+    .div{
         
-        justify-content: center;
-    }
-    .tipo-ajuda{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-    .descricao{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-        width: 500px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    }
-    input{
-      font-size: 18px;
-    }
-    label{
-        font-size: 18px;
-    }
-    .btn-form{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-        
-        justify-content: center;
-    }
-
-}
-@media(min-width:1440px){
+        margin-right: 200px;
+        }
     .h3{
-        font-size: 30px;
-    
+       
+        text-align: center;
     }
-    .registro-ideia{
+    .selecao{
         display: flex;
-        flex-direction: row;
-    }
-    .nome{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .endereco{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .telefone{
-        padding: 0px 30%;
-        justify-content: center;
-    }
-    .email{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .cidade{
-        padding: 1px 30%;
-        justify-content: center;
-    }
-    .uf{
-        padding: 0px 32% 0px 30%;
-        justify-content: center;
-    }
-    .categoria{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
+        width: 100%;
+        height: auto;
+        margin-left:50px;
         
-        justify-content: center;
-    }
-    .tipo-ajuda{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
         
-        justify-content: center;
     }
-    .descricao{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
-
-    }
-    input{
-      font-size: 20px;
-    }
-    label{
+    select{
         font-size: 20px;
     }
-    .btn-form{
-        padding: 0px 26% 0px 30%;
-        font-size: 18px;
+    #categoria{
+        margin-left: 100px;
+    }
+    #tipoajuda{
+        margin-left: 130px;
+    }
+    #btn-form{
+        margin-top: 60px;
+        margin-right: 300px;
+        margin-left: 300px;
+    }
+    #textarea{
+        width: 500px;
+        height: 200px;
+    }
+    #descricao{
+        margin-left: 50px;
+    }
+    .label{
+        font-size: 1.5rem;
+    }
+}
+@media(min-width:720px){
+    .registerIdeia{
+ 
+        height: 100vh;
+        width: 100vw;
+        padding: 0 20px;
+    
+        background: var(--background-primary);
+        
+    
+    }
+    .registro-idea{
+        width: 100%;
+        height: 100%;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .div{
+        margin-left: 5%;
+
+        }
+    .h3{
+       
+        text-align: center;
+    }
+    .selecao{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-left:50px;
+        
+        
+    }
+    select{
+        font-size: 20px;
+    }
+    #categoria{
+        margin-left: 200px;
+    }
+    #tipoajuda{
+        margin-left: 130px;
+    }
+    #btn-form{
+        margin-top: 60px;
+        margin-right: 300px;
+        margin-left: 300px;
+    }
+    #textarea{
+        width: 300px;
+        height: 100px;
+    }
+    #descricao{
+        margin-left: 80px;
+    }
+    .label{
+        font-size: 1.5rem;
     }
 }
