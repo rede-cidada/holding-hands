@@ -1,7 +1,5 @@
 import React from 'react'; 
-import RegisterIdeia from './pages/registerIdeia';
-//import DonationObject from './pages/DonationObject';
-
+import Routes from './services/routes'
 
 import './assets/global.css';
 
@@ -9,10 +7,7 @@ import './assets/global.css';
 
 function App() {
   return (
-
-    <RegisterIdeia/>
-    
-    
+    <Routes/>
   );
 }
 
