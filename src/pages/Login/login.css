@@ -1,102 +1,121 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
+.container-cadastro {
     height: 100%;
-}
-
-html {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: var(--background-primary);
 }
 
-.container-login {
+.title-cadastro {
+    padding: 15px 0;
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-input{
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-cadastro{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 8px;
     background-color: var(--color-primary);
-    height: 90vh;
-    width: 40vw;
-    padding: 25%;
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px 1px #3333339a;
+    color: #161414;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.titulo-login {
-    /* background: chartreuse; */
-    font-size: 40px;
+.cadastro-label{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
 }
 
-/* .container-label {
-    background-color: tomato;
-    margin: 2%;
-} */
+.form-btn-container{
+    width: 100%;
+    max-width: 280px;
+    padding: 8px 15px;
 
-.margin2 {
-    margin: 2%;
+    outline-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 }
 
-.margin10 {
-    margin: 10%;
-}
+.btn-cadastro{
+    width: 12rem;
+    height: 3rem;
 
-.input-size {
-    width: 350px;
-    height: 40px;
-    line-height: 20px;
-    border-radius: 8px;
-}
+    background: var(--background-btn-secondary-light);
+    border-radius: 9px;
 
-.font-label {
-    font-size: 20px;
-}
+    font: 700 1rem Poppins;
 
-.btn-login {
-    width: 350px;
-    height: 40px;
-    border-radius: 8px;
-    /* margin-top: 15%; */
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.font20 {
-    font-size: 20px;
-}
-
-.btn-login:hover {
-    cursor: pointer;
-}
-
-.btn-login:hover {
-    background: var(--background-btn-landing);
-}
-
-.btn-login:active {
-    background: var(--background-primary);
+    border: none;
+    outline: none;
     color: var(--color-primary);
+
+    transition: background 0.4s;
 }
 
-@media (max-width: 925px) {
-    .container-login {
-        background-color: var(--color-primary);
-        height: 100vh;
-        width: 100vw;
-        padding: 25%;
-        border-radius: 0;
-    }
-    .input-size {
-        width: 40vw;
-    }
-    .btn-login {
-        width: 40vw;
-    }
+.btn-cadastro:hover {
+    background :var(--background-btn-secondary);
 }
 
-@media (max-height: 520px) {
-    .input-size {
-        width: 80vw;
-    }
-    .btn-login {
-        width: 80vw;
-    }
+.icon-buttom {
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid var(--color-primary);
 }
 
+.container-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.check-form{
+    width: 1.1rem;
+    height: 1.1rem;
+
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    outline: none;
+
+    margin-right: 8px;
+}
+
+@media (min-width: 750px) {
+
+}
+
+.label-check{
+
+}

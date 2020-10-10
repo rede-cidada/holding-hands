@@ -6,7 +6,7 @@ import Landing from '../pages/Landing';
 import Register from '../pages/Register';
 import Ideas from '../pages/Ideas';
 import Description from '../pages/Project-description';
-import Cadastro from '../pages/Cadastro';
+import Cadastro from '../pages/Cadastro'; 
 import DonationObject from '../pages/DonationObject';
 import Login from '../pages/Login'
 

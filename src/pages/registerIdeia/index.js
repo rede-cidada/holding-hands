@@ -1,5 +1,5 @@
 import React from 'react';
-import '../registerIdeia/registerIdeia.css';
+import './registerIdeia.css';
 
 const RegisterIdeias = () => {
     return (

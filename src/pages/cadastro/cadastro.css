@@ -1,135 +1,116 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
-    background: var(--color-primary);
-}
-
 .container-cadastro {
-    /* background-color: blue; */
-    height: 90vh;
-    width: 90vw;
-}
-
-.titulo-cadastro {
-    font-size: 40px;
-}
-
-.input-container {
-    /* background-color: green; */
-    width: 90%;
-    height: 60%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 4%;
-}
-
-/* .input-subcont {
-    background-color: yellow;
-} */
-
-.container-label {
-    /* background-color: tomato; */
-    margin: 2%;
-}
-
-.input-size {
-    width: 350px;
-    height: 40px;
-    line-height: 20px;
-    border-radius: 8px;
-}
-
-.font-label {
-    font-size: 20px;
-}
-
-.btn-container {
-    /* background-color: violet; */
-    width: 90%;
-    height: 25%;
-}
-
-.btn-cadastro {
-    width: 350px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 8px;
+    height: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.title-cadastro {
+    padding: 15px 0;
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-input{
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.input-cadastro{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--color-primary);
+    color: #161414;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cadastro-label{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+.form-btn-container{
+    width: 100%;
+    max-width: 280px;
+    padding: 8px 15px;
+
+    outline-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.btn-cadastro{
+    width: 12rem;
+    height: 3rem;
+
+    background: var(--background-btn-secondary-light);
+    border-radius: 9px;
+
+    font: 700 1rem Poppins;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+    color: var(--color-primary);
+
+    transition: background 0.4s;
 }
 
 .btn-cadastro:hover {
-    background: var(--background-btn-landing);
-}
-
-.btn-cadastro:active {
-    background: var(--background-primary);
-    color: var(--color-primary);
+    background :var(--background-btn-secondary);
 }
 
 .icon-buttom {
-    width: 20px;
+    height: 30px;
     margin-right: 10px;
+    border: 1px solid var(--color-primary);
 }
 
-@media (max-width: 986px) {
-    .input-container {
-        /* background-color: pink; */
-        /* width: 100vw; */
-        /* height: 100vh; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container-label {
-        /* background-color: tomato; */
-        margin: 0;
-        flex-direction: column;
-    }
+.container-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0;
 }
 
-@media (max-height: 500px) {
-    .input-size {
-        width: 250px;
-        height: 30px;
-        line-height: 20px;
-        border-radius: 6px;
-    }
+.check-form{
+    width: 1.1rem;
+    height: 1.1rem;
 
-    .btn-cadastro {
-        width: 250px;
-        height: 30px;
-        font-size: 20px;
-        border-radius: 6px;
-    }
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    outline: none;
+
+    margin-right: 8px;
 }
 
-@media (max-height: 400px) {
-    .input-size {
-        width: 200px;
-        height: 25px;
-        line-height: 15px;
-        border-radius: 6px;
-    }
+@media (min-width: 750px) {
 
-    .btn-cadastro {
-        width: 200px;
-        height: 25px;
-        line-height: 15px;
-        border-radius: 6px;
-        font-size: 16px;
-    }
 }

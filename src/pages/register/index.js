@@ -27,7 +27,7 @@ const Register = () => {
                 <p>Para você que quer ajudar mais alguma causa social
                     que precisa de doações ou trabalhos voluntários.</p>
                 
-                <button className="btn-register btn-idea">Faça Login</button>
+                <Link to="/Login" className="btn-register btn-idea">Faça Login</Link>
             </div>
 
         </section>

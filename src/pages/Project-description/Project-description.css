@@ -38,7 +38,7 @@ body{
 
 .title-container h1{
     color: var(--color-primary);
-    font: 700 2.3rem Archivo;
+    font: 700 2.1rem Archivo;
 }
 
 .container-description{
@@ -61,16 +61,21 @@ body{
 .containers h2{
     font-size: 1.4rem;
     padding-bottom: 10px;
-    padding-top: 15px ;
+    padding-top: 15px;
 }
 
 .containers p{
-    padding-left: 15px;
+    font-size: 1rem;
+    padding: 0 10px;
 }
 
 .information-projeto div{
     width: 100%;
     max-width: 900px;
+}
+
+h2.title-location{
+    padding-top: 2.5rem; 
 }
 
 .information-projeto .location{
@@ -80,6 +85,16 @@ body{
 
 .information-projeto .location img{
     width: 24px;
+}
+
+.maps-container{
+    padding-top: 15px;
+}
+
+.maps-container iframe{
+    width: 100%;
+    height: 10rem;
+    border: 6px solid var(--color-primary);
 }
 
 .btn-container{
@@ -119,8 +134,16 @@ body{
 }
 
 @media(min-width:720px){
+    .title-container h1{
+        font-size: 2.3rem;
+    }
     .container-ProjectDescription{
         width: 98.7vw;
+    }
+
+    .maps-container iframe{
+        height: 20rem;
+        border: 6px solid var(--color-primary);
     }
 
     .btn-container{
