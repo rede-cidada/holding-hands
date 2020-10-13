@@ -190,7 +190,7 @@
         flex-wrap: wrap;
     }
     .div{
-        margin-left: 5%;
+        margin-left: 15%;
 
         }
     .h3{
@@ -212,15 +212,16 @@
         margin-left: 200px;
     }
     #tipoajuda{
-        margin-left: 130px;
+        margin-left: 260px;
     }
     #btn-form{
         margin-top: 60px;
         margin-right: 300px;
         margin-left: 300px;
+        font-size: 2rem;
     }
     #textarea{
-        width: 300px;
+        width: 450px;
         height: 100px;
     }
     #descricao{
@@ -228,5 +229,9 @@
     }
     .label{
         font-size: 1.5rem;
+    }
+  
+    .registerIdeia-Form{
+        margin-left: 0;
     }
 }
