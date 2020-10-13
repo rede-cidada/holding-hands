@@ -2,11 +2,11 @@ import React from 'react';
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-import Landing from '../pages/landing';
-import Register from '../pages/register';
-import Ideas from '../pages/ideas';
+import Landing from '../pages/Landing';
+import Register from '../pages/Register';
+import Ideas from '../pages/Ideas';
 import Description from '../pages/Project-description';
-import Cadastro from '../pages/cadastro'; 
+import Cadastro from '../pages/Cadastro'; 
 import DonationObject from '../pages/DonationObject';
 import Login from '../pages/Login'
 
