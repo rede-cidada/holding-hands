@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+//import { Link } from 'react-router-dom';
 import './ideas.css';
-import searchIcon from "../../assets/img/ideas/search-icon.png";
-import logoAnimal from "../../assets/img/ideas/logo-bicho.jpg";
-import logoExample from "../../assets/img/ideas/exemplo.gif";
-import logoFood from "../../assets/img/ideas/comida.png";
 
-import { Link } from 'react-router-dom';
+import searchIcon from "../../assets/img/ideas/search-icon.png"
 
 const Ideas = () => {
+    const [data, setData] = useState([]);
+    const [index, setIndex] = useState();
+
+    useEffect(() => {
+        const getData = async() => {
+            const informacoes = await fetch("https://raw.githubusercontent.com/rede-cidada/fake-data-api/main/holding-hands/data.json");
+            const date = await informacoes.json();
+            setData(date);
+            console.log(date);
+        };
+        getData();
+    }, []);
+
     return (      
         <section className="ideas-container">
             <div className="container-ideia-form">
@@ -43,81 +53,25 @@ const Ideas = () => {
                             <img className="search-icon" src={searchIcon} alt="Pesquisar"/>
                         </button>
                     </div>
+
                 </form> 
             </div>
-
+                                           
             <div className="project-cards">
-
                 <div className="project-card">
                     <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
+                        {/* <Link className="project-title-link" to="/projeto-description">Nome do Projeto</Link> */}
+                        {data.map(({nome}, index) => (
+                            <p className="project-title-link" key={nome} onClick={() => setIndex(index)}>{nome}</p>
+                        ))}
                     </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
-                </div>
-
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        <img className="icon-ideas" src={logoAnimal} alt="Logo da ong de animais"/>
-                        <Link className="project-title-link" to="/projeto-description">Amigo Quatro Patas</Link>
-                    </div>
-                    <p className="ideas-paragraph">Abrigo que resgata cães e gatos das ruas.</p>
+                    <p className="ideas-paragraph">
+                        {data && <p>{data[index]?.descricao}</p>}
+                    </p>
+                    
+                    <p className="ideas-paragraph">
+                        {data && <p>{data[index]?.responsavel}</p>}
+                    </p>
                 </div>
             </div>
         </section>
