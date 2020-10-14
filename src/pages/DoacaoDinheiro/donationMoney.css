@@ -101,10 +101,10 @@
     }
 
     .donation-form-container-card{
-
+        border-radius: 3px 0 0 3px;
     }
 
     .donation-form-container-money{
-
+        border-radius: 0 3px 3px 0;
     }
 }
