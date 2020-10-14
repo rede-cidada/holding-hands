@@ -1,11 +1,10 @@
 import React from 'react';
 
-import './donationObject.css';
+import './doacaoObjetos.css';
 
 const DonationObject = () =>{
     return(
         <div className="container-donation">
-            
             <form className="form-donation">
                 <h1 className="title-donation">Doação de objetos</h1>
                 <div className="object">

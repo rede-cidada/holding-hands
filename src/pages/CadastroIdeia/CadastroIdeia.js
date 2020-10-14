@@ -1,5 +1,5 @@
 import React from 'react';
-import './registerIdeia.css';
+import './cadastroIdeia.css';
 // import Header from '../Header'
 
 const RegisterIdeias = () => {

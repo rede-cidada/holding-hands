@@ -10,13 +10,12 @@ import Heart from '../../assets/img/landing/heart.svg';
 import Lamp from '../../assets/img/landing/lamp.svg';
 import User from '../../assets/img/landing/user.svg';
 
-
 const Landing = () => {
     return(
         <div className="landing-all">
             <header>
                 <nav className="nav-bar">
-                    <li className="nav-bar-itens item-user"><Link to="/register"><img src={User} alt=""/></Link></li>
+                    <li className="nav-bar-itens item-user"><Link to="/login"><img src={User} alt=""/></Link></li>
                 </nav>
             </header>
 
@@ -31,12 +30,11 @@ const Landing = () => {
                 <img className="landing-background" src={LandingBackground} alt=""/>
 
                 <div className="btn-container-landing">
-                        <Link className="btn-help" to="/ideia"><img src={Heart} alt=""/> Quero ajudar</Link>
+                        <Link className="btn-help" to="/lista-de-ideias"><img src={Heart} alt=""/> Quero ajudar</Link>
                     
-                        <Link className="btn-idea" to="/register"><img src={Lamp} alt=""/> Divulgar ideia</Link>
+                        <Link className="btn-idea" to="/cadastros"><img src={Lamp} alt=""/> Divulgar ideia</Link>
                 </div>
             </div>
-
         </div>
     )
 }
