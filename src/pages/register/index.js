@@ -2,12 +2,14 @@ import React from 'react';
 import './register.css';
 import branchIcon from "../../assets/img/register/icone-galho.svg";
 import heartIcon from "../../assets/img/register/icone-coracao.png";
+// import Header from "../Header"
 
 import { Link } from 'react-router-dom';
 
 const Register = () => {
     return (
-        <section className="register-container">        
+        <section className="register-container">  
+            {/* <Header />       */}
             <div className="register-user">
                 
                 <img className="icon-register" src={branchIcon} alt="Ícone de galho com folhas."/>   

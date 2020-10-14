@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../assets/img/landing/logo-Hoding-Hands.svg'
+import { Link } from 'react-router-dom';
 
 import './header.css'
 
@@ -7,22 +8,29 @@ export default function Header() {
     return(
         <header class='header'>   
             <div className='header-content'>
-                <a href='https://www.google.com/'>
+                <Link to="/">
                     <img 
                     src={Logo} 
                     alt="Logo holdin hands" 
                     class='logo-header'/>
-                </a>
+                </Link>
 
                 <ul className='menu'>
                     <li class='item-menu'>
-                        <a className='link-item-menu' href="https://www.google.com/">HOME</a>
+                        <Link className='link-item-menu'
+                                to="/register">HOME</Link>
                     </li>
                     <li class='item-menu'>
-                        <a className='link-item-menu' href="https://www.google.com/">LOGIN</a>
+                        <Link className='link-item-menu'
+                                to="/Login">LOGIN</Link>
                     </li>
-                    <li class='item-menu'>
-                        <a className='link-item-menu' href="https://www.google.com/">CADASTRO</a>
+                    <li class='item-menu'>                        
+                        <Link className='link-item-menu'
+                                to="/cadastro">CADASTRAR-SE</Link>                        
+                    </li>                    
+                    <li class='item-menu'>                        
+                        <Link className='link-item-menu'
+                                to="/cadastrar-ideia">CADASTRAR IDEIA</Link>                        
                     </li>
                 </ul>                
             </div>     

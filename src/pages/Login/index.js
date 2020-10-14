@@ -1,11 +1,12 @@
 import React from 'react'
 
 import './login.css'
-
+import Header from '../Header'
 
 export default function Login() {
     return(
         <div class='container-cadastro'>
+            <Header />
             <h2 class='title-cadastro'>Login</h2>
 
             <div class='form-container'>  

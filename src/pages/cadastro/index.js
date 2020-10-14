@@ -1,12 +1,14 @@
 import React from 'react';
 
 import './cadastro.css';
+import Header from '../Header'
 
 
 export default function Cadastro() {
     return(
         
         <div class='container-cadastro'>
+            <Header />
             <h2 class='title-cadastro'>Cadastro</h2>
 
             <div class='form-container'>  
