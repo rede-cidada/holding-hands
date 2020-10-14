@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './ideas.css';
 
 import searchIcon from "../../assets/img/ideas/search-icon.png"
@@ -59,10 +59,10 @@ const Ideas = () => {
                                            
             <div className="project-cards">
             {data.map(({nome}, index) => (
-                <div className="card">
+                <Link to="/ideia" className="card">
                     <div className="header-card"></div>
                     <div className="main-card">
-                    <h2 className="title-card">{data[index]?.nome}</h2>
+                        <h2 className="title-card">{data[index]?.nome}</h2>
                         <p className="paragraph-card">{data[index]?.descricao}</p>
                     </div>
                 
@@ -84,7 +84,7 @@ const Ideas = () => {
                     </div>
         
                 </div>
-                </div>
+                </Link>
                 ))}
             </div>
         </section>
