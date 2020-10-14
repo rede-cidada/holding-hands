@@ -97,43 +97,89 @@
     background-image: url(../../assets/img/Project-description/pattern-objeto.png);
 }
 
-.project-card {
+.card{
     width: 18rem;
-    height: 9.5rem;
-
-    display: flex;
-    flex-direction: column;   
-    justify-content: space-around;
-    text-align: justify;
-
-    background: url(../../assets/img/ideas/background-ideas.jpg) center / cover no-repeat;
-    padding: 1.3rem;
-    border-radius: 9px;
-    margin-bottom: 20px;  
+    margin: 15px;
+    background: #F1F1F1;
+    border-radius: 3px;
+    transition: 0.5s;
 }
 
-.icon-title-cards {
+.card:hover{
+    transform: scale(1.1,1.1);
+}
+
+.main-card{
+    height: 8rem;
+}
+
+.title-card{
+    padding: 5px 15px;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #0f0f0f;
+    text-align: center;
+}
+  
+.paragraph-card{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    color: #9E9E9E;
+    font-weight: bold;
+}
+  
+.div-information{
+    width:100%;
+    margin-top:5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.icon-ideas {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 5px;
-
-    border-radius: 50%;
+  
+.information{
+    width: 6rem;
+    height: 4rem;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background: #FCBA04;
 }
-
-.project-title-link {
-    font-family: Poppins, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--color-basic);
-    text-align: left;
-    padding-left: 2rem;
+  
+.information-center{
+    border-left: 2px solid #00000023;
+    border-right: 2px solid #00000023;
+    border-radius:0;
+}
+  
+.information-left{
+    border-radius: 0 0 0 3px;
+}
+  
+.information-right{
+    border-radius: 0 0 3px 0;
+}
+  
+.information h3.title-information{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #0f0f0f;
+}
+  
+.information p.paragraph-information{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #0f0f0f;
+    padding-top: 2px;
 }
 
 .ideas-paragraph {

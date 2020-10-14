@@ -58,21 +58,34 @@ const Ideas = () => {
             </div>
                                            
             <div className="project-cards">
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        {/* <Link className="project-title-link" to="/projeto-description">Nome do Projeto</Link> */}
-                        {data.map(({nome}, index) => (
-                            <p className="project-title-link" key={nome} onClick={() => setIndex(index)}>{nome}</p>
-                        ))}
+            {data.map(({nome}, index) => (
+                <div class="card">
+                    <div class="header-card"></div>
+                    <div class="main-card">
+                    <h2 class="title-card">{data[index]?.nome}</h2>
+                        <p class="paragraph-card">{data[index]?.descricao}</p>
                     </div>
-                    <p className="ideas-paragraph">
-                        {data && <p>{data[index]?.descricao}</p>}
-                    </p>
+                
+                <div class="div-information">
+                
+                    <div class="information information-left">
+                        <h3 class="title-information">5.000</h3>
+                        <p class="paragraph-information">Doações em dinheiro</p>
+                    </div>
                     
-                    <p className="ideas-paragraph">
-                        {data && <p>{data[index]?.responsavel}</p>}
-                    </p>
+                    <div class="information information-center">
+                        <h3 class="title-information">500</h3>
+                        <p class="paragraph-information">Objetos Doados</p>
+                    </div>
+                    
+                    <div class="information information-right">
+                        <h3 class="title-information">123</h3>
+                        <p class="paragraph-information">Voluntarios</p> 
+                    </div>
+        
                 </div>
+                </div>
+                ))}
             </div>
         </section>
     )
