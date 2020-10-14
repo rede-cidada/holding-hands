@@ -59,28 +59,28 @@ const Ideas = () => {
                                            
             <div className="project-cards">
             {data.map(({nome}, index) => (
-                <div class="card">
-                    <div class="header-card"></div>
-                    <div class="main-card">
-                    <h2 class="title-card">{data[index]?.nome}</h2>
-                        <p class="paragraph-card">{data[index]?.descricao}</p>
+                <div className="card">
+                    <div className="header-card"></div>
+                    <div className="main-card">
+                    <h2 className="title-card">{data[index]?.nome}</h2>
+                        <p className="paragraph-card">{data[index]?.descricao}</p>
                     </div>
                 
-                <div class="div-information">
+                <div className="div-information">
                 
-                    <div class="information information-left">
-                        <h3 class="title-information">5.000</h3>
-                        <p class="paragraph-information">Doações em dinheiro</p>
+                    <div className="information information-left">
+                        <h3 className="title-information">5.000</h3>
+                        <p className="paragraph-information">Doações em dinheiro</p>
                     </div>
                     
-                    <div class="information information-center">
-                        <h3 class="title-information">500</h3>
-                        <p class="paragraph-information">Objetos Doados</p>
+                    <div className="information information-center">
+                        <h3 className="title-information">500</h3>
+                        <p className="paragraph-information">Objetos Doados</p>
                     </div>
                     
                     <div class="information information-right">
-                        <h3 class="title-information">123</h3>
-                        <p class="paragraph-information">Voluntarios</p> 
+                        <h3 className="title-information">123</h3>
+                        <p className="paragraph-information">Voluntarios</p> 
                     </div>
         
                 </div>
