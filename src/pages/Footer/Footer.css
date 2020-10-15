@@ -1,62 +1,76 @@
-.divFooter{
-        width: 100vw;
-        height: auto;
-        
-        position: relative;
-        color: white;
-        background: #067bbe;
-        display:flex; 
-        font: 200 0.9rem MuseoModerno;
-        opacity: 0.8;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding-top: 10px;
-        
-    
+.footer-conatiner-all{
+    width: 100%;
+
+    position: absolute;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+
+    background: var(--background-secondary);
+    font: 200 0.9rem MuseoModerno;
+    padding: 10px 0;
 }
-.copy{
-    padding: 0 80px;
+
+.footer-conatiner{
+    width: 100%;
+    max-width: 1000px;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
-.divLogo{
+
+.logo-footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    margin-left: 25%;
-   
 }
-.holding{
-    width: 50px;
-    height: 50px;
+
+.logo-footer-img{
+    width: 30px;
 }
-.logo-nome{
-    margin-top: 10px;
+
+.logo-footer-title{
+    font-size: 1rem;
 }
-.copy a{
-    text-decoration: none;
-    color: white;
-    padding-left:5px;
+
+.footer-devs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.copy a:hover{
-    background-color: white;
-    color: blue;
+
+.footer-devs-itens{
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    cursor: pointer;
 }
-@media(min-width:768px){
-    .divFooter{
-        display:flex; 
-        font: 200 0.9rem MuseoModerno;
-        opacity: 0.8;
-        justify-content: center;
-        align-items: flex-start;
+
+.footer-devs-itens:hover{
+    text-decoration: underline;
+}
+
+.copy{
+    font-size: 0.8rem;
+}
+
+@media(min-width:720px){
+    .footer-conatiner{
         flex-direction: row;
-        
-    
-}
-    .copy{
-        margin-top: 10px;
+        justify-content: space-between;
+        padding: 0 30px;
     }
-}
-@media(min-width:1024px){
-    .divLogo{
-        margin-left: 5%;
-    }    
+
+    .footer-devs-all{
+        display: flex;
+        flex-direction: row;
+        padding: 15px 0;
+    }
+
+    .footer-devs{
+        padding: 0 10px;
+    }
 }

@@ -1,5 +1,5 @@
 .container-cadastro {
-    height: 100%;
+    height: calc(100% - 70px);
     width: 100vw;
     display: flex;
     align-items: center;
@@ -119,6 +119,8 @@
 }
 
 @media (min-width: 750px) {
-
+    .container-cadastro {
+        width: 98.7vw;
+    }
 }
 
