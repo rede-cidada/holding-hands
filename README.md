@@ -12,6 +12,6 @@
 - [x] Igualdade de gênero;
 - [x] Outros.
 
-> Projeto final do curso Start LATAM da Rede Cidadã em parceria com a Accenture Brasil.
 #### Colaboradores:
 [Ana Gisely](https://github.com/Anagisely), [Aryane Cristine](https://github.com/aryane-cristine), [Maria Luísa Costa](https://github.com/maluhcosta) e [Tiago Augusto](https://github.com/TiagoAugustoFront)
+> Projeto final do curso Start LATAM da Rede Cidadã em parceria com a Accenture Brasil.
