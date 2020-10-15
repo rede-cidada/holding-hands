@@ -169,7 +169,7 @@
         font-size: 1.5rem;
     }
 }
-@media(min-width:720px){
+@media(min-width:768px){
     .registerIdeia{
  
         height: 100vh;
