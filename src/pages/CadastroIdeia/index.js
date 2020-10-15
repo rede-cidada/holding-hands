@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import "./cadastroIdeia.css";
 
 const RegisterIdeias = () => {
     return (
         <section className = "registerIdeia">
-            <Header/>
             <div className="registerIdeia-Form">
                 <div className="h3">
                     <h3>Cadastro de Ideias</h3>
@@ -74,7 +71,6 @@ const RegisterIdeias = () => {
                     </div>                                       
                 </form>
             </div>
-            <Footer/>
         </section>
     )
 }

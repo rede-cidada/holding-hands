@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import "./cadastroUsuario.css";
 
 const CadastroUsuario = () => {
     return(        
-        <section class='container-cadastro'>
-            <Header/>           
+        <section class='container-cadastro'>       
             <h2 class='title-cadastro'>Cadastro</h2>
 
             <div class='form-container'>  
@@ -50,7 +47,6 @@ const CadastroUsuario = () => {
                         <div className="btn-content">Casdastre-se</div>
                     </button>
                 </div>
-                <Footer/>
         </section>
     )
 }

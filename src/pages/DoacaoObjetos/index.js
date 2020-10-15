@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import "./doacaoObjetos.css";
 
 const DoacaoObjetos = () => {
     return(
         <div className="container-donation">
-            <Header/>
             <form className="form-donation">
                 <h1 className="title-donation">Doação de objetos</h1>
                 <div className="object">
@@ -30,7 +27,6 @@ const DoacaoObjetos = () => {
                     <button className="btn-form-donation">Concluir</button>
                 </div>
             </form>
-            <Footer/>
         </div>
     )
 }

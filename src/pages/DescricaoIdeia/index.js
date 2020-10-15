@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import "./Project-description.css";
 
@@ -9,7 +7,6 @@ import Location from "../../assets/img/Project-description/location.svg";
 const DescricaoProjeto = () => {
     return(
         <section className="container-ProjectDescription">
-            <Header/>
             <div className="title-container">
                 <h1>adssasdfsgsdf gfd</h1>
             </div>
@@ -57,7 +54,6 @@ const DescricaoProjeto = () => {
                     <Link to="/doacao-de-dinheiro" className="btn money">Doar Dinheiro</Link>
                 </div>
             </div>
-            <Footer/>
         </section>
     )
 }

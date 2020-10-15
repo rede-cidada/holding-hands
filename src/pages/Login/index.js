@@ -1,12 +1,9 @@
 import React from "react"
-import Header from "../Header";
-import Footer from "../Footer";
 import "./login.css"
 
 const Login= () => {
     return(
         <div class='container-cadastro'>
-            <Header />
             <h2 class='title-cadastro'>Login</h2>
 
             <div class='form-container'>  
@@ -41,7 +38,6 @@ const Login= () => {
                     </div>
                 </button>
             </div>
-            <Footer/>
         </div>
     )
 }

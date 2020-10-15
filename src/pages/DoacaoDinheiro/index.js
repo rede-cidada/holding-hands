@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import "./doacaoDinheiro.css";
 
 const DoacaoDinheiro = () => {
     return(
         <section className="donation-container">
-            <Header/>
             <div className="donation-form-container donation-form-container-card">
                 <h2 className="title-donation">Cartão</h2>
                 
@@ -57,7 +54,6 @@ const DoacaoDinheiro = () => {
                     <div className="btn-content">Entrar</div>
                 </button>
             </div>
-            <Footer/>
         </section>
     )
 }

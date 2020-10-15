@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import { Link } from 'react-router-dom';
 import "./cadastros.css";
 
@@ -9,8 +7,7 @@ import heartIcon from "../../assets/img/register/icone-coracao.png";
 
 const Cadastros = () => {
     return (
-        <section className="register-container">  
-            <Header/>
+        <section className="register-container"> 
             <div className="register-user">               
                 <img className="icon-register" src={branchIcon} alt="Ícone de galho com folhas."/>   
                 
@@ -31,7 +28,6 @@ const Cadastros = () => {
 
                 <Link to="/login" className="btn-register btn-idea">Faça Login</Link>
             </div>
-            <Footer/>
         </section>
     )
 }
