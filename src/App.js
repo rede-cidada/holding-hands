@@ -9,7 +9,7 @@ import "./assets/global.css";
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      <Header/> 
       <Routes/>
       <Footer/>
     </BrowserRouter>

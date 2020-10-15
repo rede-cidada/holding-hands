@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Header from "../Header";
+import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import "./ideas.css";
 
@@ -19,6 +21,7 @@ const Ideas = () => {
 
     return (      
         <section className="ideas-container">
+            <Header/>
             <div className="container-ideia-form">
                 <form className="ideas-form">
                     <select className="ideas-categories all">
@@ -82,8 +85,9 @@ const Ideas = () => {
                             </div>        
                         </div>
                     </Link>
-                ))}
-            </div>
+                    ))}
+                </div>
+                <Footer/>
         </section>
     )
 }

@@ -1,76 +1,89 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./cadastroIdeia.css";
 
 const RegisterIdeias = () => {
     return (
-        <section className = "registerIdeia">
-            <div className="registerIdeia-Form">
-                <div className="h3">
-                    <h3>Cadastro de Ideias</h3>
+        <section className = "register-ideia-container">
+            <h1 class="register-ideia-title">Cadastro de Ideia</h1>        
+            <form className="register-ideia-form" name="registro-idea">      
+                <div className="register-ideia-div" id="Nome-da-organização">
+                    <label className="register-ideia-label" for="Nome-da-organização">Nome:</label>
+                    <input className="registerideia-input-nome register-ideia-input" type="text" id="Nome-da-organização" nome="Nome-da-organização" required/>
                 </div>
-                
-                <form className="registro-idea" name="registro-idea">      
-                    <div className="div" id="Nome-da-organização">
-                        <label className="label" for ="Nome-da-organização">Nome:</label>
-                        <input className="input" type="text" id="Nome-da-organização" required="required" nome="Nome-da-organização" placeholder="Nome do projeto"></input>
-                    </div>
                    
-                    <div className="div" id="endereco">
-                        <label className="label" for ="endereco">Endereço:</label>
-                        <input className="input" type="text" id="endereco" required="required" name="endereco" placeholder="rua tal numero tal"></input>
+                <div className="register-ideia-div">
+                    <label className="register-ideia-label" for="endereco">Endereço:</label>
+                    <input className="registerideia-input-endereco register-ideia-input" type="text" id="endereco" name="endereco" required/>
+                </div>
+                    
+                <div className="register-ideia-div">
+                    <label className="register-ideia-label" for="Telefone">Telefone:</label>
+                    <input className="registerideia-input-telefone register-ideia-input" type="number" id="telefone" name="Telefone" maxlength="11" required />
+                </div>
+                    
+                <div className="register-ideia-div">
+                    <label className="register-ideia-label" for="e-mail"> E-mail:</label>
+                    <input className="registerideia-input-email register-ideia-input" type="email" id="email" name="e-mail" required />
+                </div>
+                <div className="registerideia-cidade-uf">   
+                    <div className="register-ideia-div">
+                        <label className="register-ideia-label" for="cidade">Cidade:</label>
+                        <input className="registerideia-input-cidade" type="text" id="cidade" name="cidade" required />
                     </div>
-                    
-                    <div className="div" id="telefone">
-                        <label className="label" for ="Telefone">Telefone:</label>
-                        <input className="input" type="number" id="telefone" required="required" name="Telefone" maxlength="11"placeholder="99999999999"></input>
+                        
+                    <div className="register-ideia-div">
+                        <label className="register-ideia-label" for="uf"> UF:</label>
+                        <input className="registerideia-input-uf" type="text" id="uf" name="UF" required />
                     </div>
+                </div> 
                     
-                    <div className="div" id="email">
-                        <label className="label" for ="e-mail"> E-mail:</label>
-                        <input className="input" type="email" id="email" required="required" name="e-mail" placeholder="fulano@mail.com" ></input>
-                    </div>
+                <div className="register-ideia-div">
+                    <label className="register-ideia-label" for="selecao">Categorias:</label>
+                    <select className="registerideia-select-categorias register-ideia-select">
+                        <option selected>Categorias</option>
+                        <option>Saúde</option>
+                        <option>Educação</option>
+                        <option>Pobreza</option>
+                        <option>Criança</option>
+                        <option>Adolescente</option>
+                        <option>Idoso</option>
+                        <option>Gestante</option>
+                        <option>Mulher</option>
+                        <option>Igualdade de gênero</option>
+                        <option>Causas LGBTQI+</option>
+                        <option>Sustentabilidade</option>
+                        <option>Deficiência física</option>
+                        <option>Deficiência mental</option>
+                        <option>Deficiência intelectual</option>
+                        <option>Deficiência auditiva</option>
+                        <option>Espectro autismo</option>
+                        <option>Problemas psicológicos</option>
+                        <option>Meio ambiente</option>
+                        <option>Causa animal</option>
+                    </select>
+                </div>
                     
-                    <div className="div" id="cidade">
-                        <label className="label" for ="cidade">Cidade:</label>
-                        <input className="input" type="text" id="cidade" required="required" name="cidade" placeholder="cidade" ></input>
-                    </div>
+                <div className="register-ideia-div">
+                    <label className="register-ideia-label" for="tipo-de-ajuda">Tipo de ajuda:</label>
+                        <select className="registerideia-select-tipo register-ideia-select">
+                            <option selected>Tipo de Ajuda</option>
+                            <option>Financeira</option>
+                            <option>Objetos</option>
+                            <option>volutária</option>                    
+                        </select>
+                </div>
+
+                <div className="register-ideia-div">  
+                    <label className="register-ideia-label" for="Descricao">Descrição:</label>
+                    <textarea className="register-ideia-textarea" nome="Descricao"></textarea>
+                </div>
                     
-                    <div className="div" id="uf" >
-                        <label className="label" for ="uf"> UF:</label>
-                        <input className="input" type="text" id="uf" required="required" name="UF" placeholder="UF" ></input>
-                    </div>
-                    
-                    <div className="selecao">
-                        <div className="div" id="categoria">
-                            <label className="label" for = "selecao">Categorias:</label>
-                            <select name="selecao">
-                                <option>inclusão social</option>
-                                <option>meio ambiente</option>
-                                <option>causas infantil</option>
-                            </select>
-                        </div>
-                    
-                        <div className="div" id="tipoajuda">
-                            <label className="label" for="tipo-de-ajuda">Tipo de ajuda:</label>
-                            <select className="select">
-                                <option>Financeira</option>
-                                <option>volutarios</option>
-                            
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div className="div" id="descricao">
-                        <label className="label" for ="Descricao">Descrição:</label>
-                        <textarea id="textarea" nome="Descricao" ></textarea>
-                    </div>
-                    
-                    <div  id="btn-form">
-                        <a className="btn-voltar" >Voltar</a>
-                        <a className="btn-enviar" >Cadastrar</a>
-                    </div>                                       
-                </form>
-            </div>
+                 <div className="register-ideia-btn-div">
+                    <button className="link-item-menu" type="submit" onClick={ () => alert('Não foi possível realizar o cadastro') }>Cadastrar</button>
+                    <Link className="link-item-menu" to="/">Voltar</Link>                     
+                </div>                                       
+            </form>
         </section>
     )
 }
