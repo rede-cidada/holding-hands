@@ -1,12 +1,13 @@
 import React from 'react'
 
 import './login.css'
-
+import Header from '../Header/Header'
 
 export default function Login() {
     return(
         <div class='container-cadastro'>
-            <h2 class='title-cadastro'>Cadastro</h2>
+            <Header />
+            <h2 class='title-cadastro'>Login</h2>
 
             <div class='form-container'>  
 
@@ -30,7 +31,7 @@ export default function Login() {
 
             <div class='form-btn-container'>
                 <button class='btn-cadastro' type="submit">
-                    <div className="btn-content">Casdastre-se</div>
+                    <div className="btn-content">Entrar</div>
                 </button>
             </div>
 

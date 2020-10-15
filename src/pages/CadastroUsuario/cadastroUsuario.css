@@ -10,7 +10,7 @@
 .title-cadastro {
     padding: 15px 0;
     font-size: 2rem;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-container{
@@ -43,6 +43,7 @@
     color: #161414;
     font-size: 1rem;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cadastro-label{

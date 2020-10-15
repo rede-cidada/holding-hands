@@ -1,9 +1,11 @@
 import React from 'react';
-import './registerIdeia.css';
+import './cadastroIdeia.css';
+// import Header from '../Header'
 
 const RegisterIdeias = () => {
     return (
         <section className = "registerIdeia">
+            {/* <Header /> */}
             <div className="registerIdeia-Form">
                 <div className="h3">
                         <h3>Cadastro de Ideias</h3>

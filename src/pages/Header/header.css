@@ -27,7 +27,7 @@ a {
     left: 0;
     width: 100%;
     height: 80px;
-    background: var(--background-idea);
+    /* background: var(--background-idea); */
     opacity: 0.5;
     z-index: 1;
 }
@@ -37,7 +37,7 @@ a {
 }
 
 .menu {
-    width: 25vw;
+    width: 35vw;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -64,8 +64,9 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .link-item-menu:hover {
-    background: var(--background-idea);
+    background: var(--color-basic);
 }

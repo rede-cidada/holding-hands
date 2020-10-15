@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './ideas.css';
 
 import searchIcon from "../../assets/img/ideas/search-icon.png"
@@ -58,21 +58,34 @@ const Ideas = () => {
             </div>
                                            
             <div className="project-cards">
-                <div className="project-card">
-                    <div className="icon-title-cards">
-                        {/* <Link className="project-title-link" to="/projeto-description">Nome do Projeto</Link> */}
-                        {data.map(({nome}, index) => (
-                            <p className="project-title-link" key={nome} onClick={() => setIndex(index)}>{nome}</p>
-                        ))}
+            {data.map(({nome}, index) => (
+                <Link to="/ideia" className="card">
+                    <div className="header-card"></div>
+                    <div className="main-card">
+                        <h2 className="title-card">{data[index]?.nome}</h2>
+                        <p className="paragraph-card">{data[index]?.descricao}</p>
                     </div>
-                    <p className="ideas-paragraph">
-                        {data && <p>{data[index]?.descricao}</p>}
-                    </p>
+                
+                <div className="div-information">
+                
+                    <div className="information information-left">
+                        <h3 className="title-information">5.000</h3>
+                        <p className="paragraph-information">Doações em dinheiro</p>
+                    </div>
                     
-                    <p className="ideas-paragraph">
-                        {data && <p>{data[index]?.responsavel}</p>}
-                    </p>
+                    <div className="information information-center">
+                        <h3 className="title-information">500</h3>
+                        <p className="paragraph-information">Objetos Doados</p>
+                    </div>
+                    
+                    <div class="information information-right">
+                        <h3 className="title-information">123</h3>
+                        <p className="paragraph-information">Voluntarios</p> 
+                    </div>
+        
                 </div>
+                </Link>
+                ))}
             </div>
         </section>
     )

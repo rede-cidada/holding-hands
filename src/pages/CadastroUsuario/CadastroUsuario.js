@@ -1,12 +1,14 @@
 import React from 'react';
 
-import './cadastro.css';
+import './cadastroUsuario.css';
+import Header from '../Header/Header'
 
 
 export default function Cadastro() {
     return(
         
         <div class='container-cadastro'>
+            <Header />
             <h2 class='title-cadastro'>Cadastro</h2>
 
             <div class='form-container'>  
@@ -35,12 +37,7 @@ export default function Cadastro() {
                     <div className="container-check">
                         <input className="check-form" type="checkbox"/><label>Aceito os termos</label>
                     </div>
-
-                    <div className="container-check">
-                        <input className="check-form" type="checkbox"/><label>Aceito os termos</label>
-                    </div>
-                </div>
-                
+                </div>               
             </div>
 
             <div class='form-btn-container'>

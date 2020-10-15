@@ -1,13 +1,15 @@
 import React from 'react';
-import './register.css';
+import './cadastros.css';
 import branchIcon from "../../assets/img/register/icone-galho.svg";
 import heartIcon from "../../assets/img/register/icone-coracao.png";
+// import Header from "../Header"
 
 import { Link } from 'react-router-dom';
 
 const Register = () => {
     return (
-        <section className="register-container">        
+        <section className="register-container">  
+            {/* <Header />       */}
             <div className="register-user">
                 
                 <img className="icon-register" src={branchIcon} alt="Ícone de galho com folhas."/>   
@@ -16,7 +18,7 @@ const Register = () => {
                     ou ser voluntário em alguma causa social.
                 </p>
 
-                <Link to="/cadastro" className="btn-register btn-user">Cadastre-se</Link>
+                <Link to="/cadastro-de-usuario" className="btn-register btn-user">Cadastre-se</Link>
 
             </div>
 
@@ -27,7 +29,7 @@ const Register = () => {
                 <p>Para você que quer ajudar mais alguma causa social
                     que precisa de doações ou trabalhos voluntários.</p>
                 
-                <Link to="/Login" className="btn-register btn-idea">Faça Login</Link>
+                <Link to="/login" className="btn-register btn-idea">Faça Login</Link>
             </div>
 
         </section>

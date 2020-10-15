@@ -60,7 +60,7 @@ const ProjectDescription = () =>{
                         <h2>Doações</h2>
                         <div className="btn-container">
                             <Link to="/Donation-objects" className="btn objects">Doar objetos</Link>
-                            <Link to="" className="btn money">Doar Dinheiro</Link>
+                            <Link to="/doacao-dinheiro" className="btn money">Doar Dinheiro</Link>
                         </div>
                     </div>
                 </div>
