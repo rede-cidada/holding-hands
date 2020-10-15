@@ -1,40 +1,49 @@
-import React from 'react'
+import React from "react"
+import Header from "../Header";
+import Footer from "../Footer";
+import "./login.css"
 
-import './login.css'
-import Header from '../Header/Header'
-
-export default function Login() {
+const Login= () => {
     return(
         <div class='container-cadastro'>
             <Header />
             <h2 class='title-cadastro'>Login</h2>
 
             <div class='form-container'>  
-
                 <div class='container-input'>
-                    <label class='cadastro-label' for="email">E-mail</label>
+                    <label class='cadastro-label' for="email">
+                        E-mail
+                    </label>
                     <input class='input-cadastro' type="email" id="email" name="email"/>
                 </div>
 
                 <div class='container-input'>
-                    <label class='cadastro-label' for="senha">Senha</label>
+                    <label class='cadastro-label' for="senha">
+                        Senha
+                    </label>
                     <input class='input-cadastro' type="password" id="senha" name="senha"/>
                 </div>
 
                 <div>
                     <div className="container-check">
-                        <input className="check-form" type="checkbox"/><label className="label-check">Manter conectado</label>
+                        <input className="check-form" type="checkbox"/>
+                        <label className="label-check">
+                            Manter conectado
+                        </label>
                     </div>
-                </div>
-                
+                </div>               
             </div>
 
             <div class='form-btn-container'>
                 <button class='btn-cadastro' type="submit">
-                    <div className="btn-content">Entrar</div>
+                    <div className="btn-content">
+                        Entrar
+                    </div>
                 </button>
             </div>
-
+            <Footer/>
         </div>
     )
 }
+
+export default Login;

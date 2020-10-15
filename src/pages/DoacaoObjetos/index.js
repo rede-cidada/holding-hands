@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import "./doacaoObjetos.css";
 
-import './doacaoObjetos.css';
-
-const DonationObject = () =>{
+const DoacaoObjetos = () => {
     return(
         <div className="container-donation">
+            <Header/>
             <form className="form-donation">
                 <h1 className="title-donation">Doação de objetos</h1>
                 <div className="object">
@@ -20,14 +22,17 @@ const DonationObject = () =>{
                 <div className="object amount-object">
                     <label className="donation-label">Quantidade</label>
                     <div className="number-objects">
-                        <button className="number-objects-btn">+</button><input type="number" className="number-objects-input"></input><button className="number-objects-btn">-</button>
+                        <button className="number-objects-btn">+</button>
+                        <input type="number" className="number-objects-input"/>
+                        <button className="number-objects-btn">-</button>
                     </div>
-                    
+                   
                     <button className="btn-form-donation">Concluir</button>
                 </div>
             </form>
+            <Footer/>
         </div>
     )
 }
 
-export default DonationObject;
+export default DoacaoObjetos;

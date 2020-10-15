@@ -2,17 +2,17 @@ import React from 'react';
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-import Landing from '../pages/Landing/Landing';
-import Cadastros from '../pages/Cadastros/Cadastros';
-import Ideias from '../pages/Ideias/Ideias';
-import DescricaoIdeia from '../pages/DescricaoIdeia/DescricaoIdeia';
-import CadastroUsuario from '../pages/CadastroUsuario/CadastroUsuario'; 
-import DoacaoObjetos from '../pages/DoacaoObjetos/DoacaoObjetos';
-import Login from '../pages/Login/Login';
-import CadastroIdeia from '../pages/CadastroIdeia/CadastroIdeia';
+import Landing from '../pages/Landing';
+import Cadastros from '../pages/Cadastros';
+import Ideias from '../pages/Ideias';
+import DescricaoIdeia from '../pages/DescricaoIdeia';
+import CadastroUsuario from '../pages/CadastroUsuario'; 
+import DoacaoObjetos from '../pages/DoacaoObjetos';
+import Login from '../pages/Login';
+import CadastroIdeia from '../pages/CadastroIdeia';
 import DoacaoDinheiro from '../pages/DoacaoDinheiro';
 
-const Routes = () =>(
+const Routes = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={Landing}/>
@@ -23,7 +23,7 @@ const Routes = () =>(
             <Route path="/doacao-de-objetos" component={DoacaoObjetos}/>
             <Route path="/login" component={Login}/> 
             <Route path="/cadastrar-ideia" component={CadastroIdeia}/>
-            <Route path="/doacao-dinheiro" component={DoacaoDinheiro}/>
+            <Route path="/doacao-de-dinheiro" component={DoacaoDinheiro}/>
         </Switch>
     </BrowserRouter>
 );

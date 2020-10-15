@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import "./doacaoDinheiro.css";
 
-import './donationMoney.css';
-
-const DonationMoney = () =>{
+const DoacaoDinheiro = () => {
     return(
-        <div className="donation-container">
-            
+        <section className="donation-container">
+            <Header/>
             <div className="donation-form-container donation-form-container-card">
                 <h2 className="title-donation">Cartão</h2>
                 
@@ -32,7 +33,6 @@ const DonationMoney = () =>{
                 <button class='btn-donation' type="submit">
                     <div className="btn-content">Entrar</div>
                 </button>
-
             </div>
 
             <div className="donation-form-container donation-form-container-money">
@@ -56,11 +56,10 @@ const DonationMoney = () =>{
                 <button class='btn-donation' type="submit">
                     <div className="btn-content">Entrar</div>
                 </button>
-
             </div>
-
-        </div>
+            <Footer/>
+        </section>
     )
 }
 
-export default DonationMoney;
+export default DoacaoDinheiro;
