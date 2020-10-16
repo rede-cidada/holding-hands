@@ -6,17 +6,18 @@
     align-items: center;
     text-align: center;
     background: var(--background-primary);
-    padding: 20% 5% 5% 5%;
+    padding: 70px 5% 5% 5%;
 }
 
 .register-ideia-title {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 300;
     font-size: 1.5rem;
-    padding: 0 2%;
+    padding: 25px 0;
 }
 
 .register-ideia-form {
-    height: 80vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +26,16 @@
 }
 
 .register-ideia-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding-bottom: .5rem;
+}
+
+.register-ideia-location {
+    width: auto;
 }
 
 .register-ideia-label {
@@ -37,35 +47,38 @@
 }
 
 .register-ideia-input {
-    width: 1rem;
-    height: 1.4%;
+    width: 100%;
+    max-width: 400px;
+    height: 1.6rem;
     border: none;
     border-radius: 4px;
 }
 
-.registerideia-input-nome {
-    width: 10.9rem;
-    height: 1.4rem;
-}
-
-.registerideia-input-endereco {
-    width: 9.2rem;
-    height: 1.4rem;
-}
-
-.registerideia-input-telefone {
-    width: 9.7rem;
-    height: 1.4rem;
-}
-
-.registerideia-input-email {
-    width: 10.8rem;
-    height: 1.4rem;
+.registerideia-nome-endereco {
+    width: 80%;
+    max-width: 700px;
 }
 
 .registerideia-cidade-uf {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.registerideia-input-nome {
+
+}
+
+.registerideia-input-endereco {
+
+}
+
+.registerideia-input-telefone {
+
+}
+
+.registerideia-input-email {
+
 }
 
 .registerideia-input-cidade {
@@ -134,5 +147,92 @@
 @media (min-width: 720px) {
     .register-ideia-container {
         width: 98.7vw;
+        padding: 8% 5%;
+    }
+
+    .register-ideia-title {
+        font-size: 2rem;
+    }
+    
+    .register-ideia-form {
+
+    }
+
+    .registerideia-nome-endereco {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .registerideia-nome-endereco {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .register-ideia-div {
+
+    }
+    
+    .register-ideia-label {
+
+    }
+    
+    .register-ideia-input {
+
+    }
+    
+    .registerideia-input-nome {
+
+    }
+    
+    .registerideia-input-endereco {
+
+    }
+    
+    .registerideia-input-telefone {
+
+    }
+    
+    .registerideia-input-email {
+
+    }
+    
+    .registerideia-cidade-uf {
+
+    }
+    
+    .registerideia-input-cidade {
+
+    }
+    
+    .registerideia-input-uf {
+
+    }
+    
+    .register-ideia-select {
+
+    }
+    
+    .registerideia-select-tipo {
+
+    }
+    
+    .registerideia-select-categorias {
+
+    }
+    
+    .register-ideia-textarea {
+
+    }
+    
+    .register-ideia-btn-div {
+
+    }
+    
+    .link-item-menu {
+
+    }
+    
+    .link-item-menu {
+
     }
 }
