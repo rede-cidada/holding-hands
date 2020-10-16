@@ -13,7 +13,7 @@ const DoacaoDinheiro = () => {
                 </div>
 
                 <div className="container-input">
-                    <label className="label-donation">Card Number</label>
+                    <label className="label-donation">Número do cartão</label>
                     <input className="input-donation"/>
                 </div>
 
@@ -28,7 +28,7 @@ const DoacaoDinheiro = () => {
                 </div>
 
                 <button class='btn-donation' type="submit">
-                    <div className="btn-content">Entrar</div>
+                    <div className="btn-content">Doar</div>
                 </button>
             </div>
 
@@ -51,7 +51,7 @@ const DoacaoDinheiro = () => {
                 </div>
 
                 <button class='btn-donation' type="submit">
-                    <div className="btn-content">Entrar</div>
+                    <div className="btn-content">Doar</div>
                 </button>
             </div>
         </section>

@@ -18,6 +18,7 @@ body{
 
 .title-container{
     width: 100%;
+    max-width: 900px;
     height: 15rem;
 
     padding: 0 10px;
@@ -42,7 +43,7 @@ body{
 
 .container-description{
     width: 100%;
-    background: var(--background-primary);
+    background: var(--background-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +54,7 @@ body{
     width: 100%;
     max-width: 750px;
 
-    background: var(--background-primary);
+    background: var(--background-secondary);
     padding: 2.5rem 15px 0 15px;
 }
 
@@ -66,6 +67,10 @@ body{
 .containers p{
     font-size: 1rem;
     padding: 0 10px;
+}
+
+.information-projeto{
+    background: var(--background-secondary);
 }
 
 .information-projeto div{
@@ -88,10 +93,15 @@ h2.title-location{
 
 .maps-container{
     padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-secondary);
 }
 
 .maps-container iframe{
-    width: 100%;
+    width: 90%;
     height: 10rem;
     border: 6px solid var(--color-primary);
 }
@@ -113,23 +123,28 @@ h2.title-location{
     height: 3rem;
 
     color: var(--color-primary);
-    background: var(--background-btn-user);
+    background:  #eea322;
 
     cursor: pointer;
-    transition: opacity 0.4s;
+    transition: background 0.4s;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 
 .btn-container a.btn:hover{
-    opacity: 0.8;
+    background:  #c4871e;
 }
 
 .btn-container a.money{
     margin-top: 15px;
+}
+
+.container-information-all{
+    width: 100vw;
+    background: var(--background-secondary);
 }
 
 @media(min-width:720px){
@@ -137,10 +152,11 @@ h2.title-location{
         font-size: 2.3rem;
     }
     .container-ProjectDescription{
-        width: 98.7vw;
+        width: 98.75vw;
     }
 
     .maps-container iframe{
+        width: 100%;
         height: 20rem;
         border: 6px solid var(--color-primary);
     }
@@ -152,5 +168,13 @@ h2.title-location{
     .btn-container a.money{
         margin-top: 0;
         margin-left: 15px;
+    }
+
+    .container-information-all{
+        width: 98.75vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }

@@ -1,15 +1,13 @@
 .donation-container{
     width: 100vw;
+    margin-top: 70px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
 
-.donation-container h1{
-    padding: 10px 0;
-    font-size: 1.8rem;
-    color: var(--background-primary);
+    background: var(--background-secondary);
 }
 
 .donation-form-container{
@@ -20,7 +18,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 15px;
-    background: var(--background-primary);
+    background: var(--background-secondary);
     padding-bottom: 15px;
     border-radius: 3px;
 }
@@ -91,7 +89,7 @@
 
 @media(min-width:720px){
     .donation-container{
-        width: 100vw;
+        width: 98.72vw;
         height: 100vh;
         flex-direction: row;
     }
