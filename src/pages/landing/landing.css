@@ -129,6 +129,10 @@ li{
     background: var(--background-btn-light);
 }
 @media(min-width:900px){
+    .landing-all{
+        width: 98.7vw;
+    }
+
     .landing-container{
 
         display: grid;

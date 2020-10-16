@@ -21,7 +21,6 @@ const Ideas = () => {
 
     return (      
         <section className="ideas-container">
-            <Header/>
             <div className="container-ideia-form">
                 <form className="ideas-form">
                     <select className="ideas-categories all">
@@ -87,7 +86,6 @@ const Ideas = () => {
                     </Link>
                     ))}
                 </div>
-                <Footer/>
         </section>
     )
 }
