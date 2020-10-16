@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Header";
-import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import "./ideas.css";
 
@@ -60,32 +58,19 @@ const Ideas = () => {
                                            
             <div className="project-cards">
                 {data.map(({nome}, index) => (            
-                <Link to="/ideia" className="card">
-                        <div className="header-card"></div>
+                    <div className="card">
                         <div className="main-card">
                             <h2 className="title-card">{data[index]?.nome}</h2>
                             <p className="paragraph-card">{data[index]?.descricao}</p>
                         </div>
-                    
-                        <div className="div-information">                       
-                            <div className="information information-left">
-                                <h3 className="title-information">5.000</h3>
-                                <p className="paragraph-information">Doações em dinheiro</p>
-                            </div>
-                            
-                            <div className="information information-center">
-                                <h3 className="title-information">500</h3>
-                                <p className="paragraph-information">Objetos Doados</p>
-                            </div>
-                            
-                            <div class="information information-right">
-                                <h3 className="title-information">123</h3>
-                                <p className="paragraph-information">Voluntarios</p> 
-                            </div>        
-                        </div>
-                    </Link>
-                    ))}
-                </div>
+                                            
+                        <div className="btn-container">
+                            <Link to="/doacao-de-objetos" className="btn-donate btn-objects">Doar objetos</Link>
+                            <Link to="/doacao-de-dinheiro" className="btn-donate btn-money">Doar dinheiro</Link>
+                        </div>                                                             
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
