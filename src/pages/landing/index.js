@@ -10,7 +10,7 @@ const Landing = () => {
     return(
         <div className="landing-all">
             <div className="landing-container">
-                <div>
+                <div className="landing-text">
                     <Link to="/">
                         <h1 className="logo-container">
                             Holding Hands

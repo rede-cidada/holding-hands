@@ -14,7 +14,7 @@
 
 .landing-all{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     margin-top: 70px;
 
     display: flex;
@@ -26,8 +26,8 @@
 
 .landing-container{
     width: 90vw;
-    max-width: 900px;
-    height: 100vh;
+    max-width: 1000px;
+
     max-height: 500px;
 
     display: flex;
@@ -89,12 +89,12 @@ li{
 }
 
 .btn-container-landing a{
-    width: 12rem;
-    height: 4rem;
+    width: 10rem;
+    height: 3.5rem;
 
-    border-radius: 9px;
+    border-radius: 4px;
 
-    font: 700 1.2rem Archivo;
+    font: 700 1rem Archivo;
 
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ li{
 }
 
 .btn-container-landing a img{
-    width: 25px;
+    width: 22px;
     margin-right: 5px;
 }
 
@@ -130,21 +130,32 @@ li{
 }
 @media(min-width:900px){
     .landing-all{
-        width: 98.7vw;
+        width: 98.72vw;
+        height: 100vh;
         margin-top: 10px;    
     }
 
     .landing-container{
-        height: 70vh;
+        height: 100vh;
+        width: 100vw;
         display: grid;
         grid-template-areas:"paragrafo land-back"
                             "btn land-back" ;                        
-        gap: 30px;
+        gap: 50px;
+    }
+
+    .landing-text{
+        padding-top: 50px;
+        padding-right: 90px;
+        grid-area: paragrafo;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .logo-container{
         font-size: 3rem;
-        grid-area: logo;
         justify-content: flex-start;
     }
 
@@ -157,9 +168,11 @@ li{
 
         margin: 0;
         justify-content: flex-start;
+        align-items: flex-end;
     }
 
     .btn-container-landing{
+        padding-bottom: 50px;
         grid-area: btn;
         flex-direction: row;
         justify-content: flex-start;

@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "./doacaoObjetos.css";
 
 const DoacaoObjetos = () => {
+
+    const [count, setCount] = useState(0);
+    if(count<0){
+        setCount(0)
+    }
+
     return(
         <div className="container-donation">
             <form className="form-donation">
@@ -19,9 +25,9 @@ const DoacaoObjetos = () => {
                 <div className="object amount-object">
                     <label className="donation-label">Quantidade</label>
                     <div className="number-objects">
-                        <button className="number-objects-btn">+</button>
-                        <input type="number" className="number-objects-input"/>
-                        <button className="number-objects-btn">-</button>
+                        <button type="button" className="number-objects-btn" onClick={() => setCount(count + 1)}>+</button>
+                        <input className="number-objects-input" value={count}/>
+                        <button type="button" className="number-objects-btn" onClick={() => setCount(count - 1)}>-</button>
                     </div>
                    
                     <button className="btn-form-donation">Concluir</button>
