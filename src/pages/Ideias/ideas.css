@@ -5,7 +5,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 70px;
 
     font-family: Archivo, sans-serif;      
     background: var(--background-primary);
@@ -215,7 +215,7 @@
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
-        margin-top: 80px;
+        margin-top: 70px;
     }
 
     .container-ideia-form{

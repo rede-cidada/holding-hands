@@ -8,12 +8,12 @@ a {
 
 .header-content{
     width: 100%;
-    height: 80px;
+    height: 70px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background: royalblue;
+    background: var(--background-secondary);
 
     position: fixed;
     z-index: 10;
@@ -40,16 +40,91 @@ a {
 }
 
 .nav-itens{
-    padding: 0 30px;
-    height: 80px;
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-itens:hover{
+    background: var(--background-btn-user);
 }
 
 .link-nav-itens{
     color: var(--color-primary);
+    font-size: 1rem;
 }
 
-.link-nav-itens:hover{
-    text-decoration: underline;
+.button-hamburguer {
+    cursor: pointer;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+
+    width: 2.17rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+
+    margin-right: 20px;
+}
+
+.menu-btn {   
+
+    background: #fff;
+
+    width: 2rem;
+    height: 0.20rem;
+    border-radius: 10px;
+    
+    position: relative;
+
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.one-open {
+    transform: rotate(45deg);
+    
+}
+
+.three-open {
+    transform: rotate(-45deg);
+    
+}
+
+.line-close {
+    transform: rotate(0);
+}
+
+.two-open {
+    opacity: 0;
+}
+  
+.two-close {
+    opacity: 1;
+}
+
+.nav-show {
+    padding-top: 35px;
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: 100vh;
+  
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    background: var(--background-secondary);
 }
 
 @media(min-width:800px){
@@ -68,8 +143,23 @@ a {
     }
 
     .nav-itens{
+        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 30px;
+    }
+
+    .link-nav-itens:hover{
+        color: #95d6fc;
+    }
+
+    .nav-itens:hover{
+        height: 70px;
+        background: none;
+    }
+
+    .button-hamburguer {
+        display: none;
     }
 }
