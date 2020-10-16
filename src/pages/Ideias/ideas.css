@@ -30,6 +30,10 @@
     color: #0f0f0f;
 }
 
+.ideas-categories option{
+    color: #0f0f0f;
+}
+
 .all {
     font-family: Poppins, sans-serif;
     width: 240px;
