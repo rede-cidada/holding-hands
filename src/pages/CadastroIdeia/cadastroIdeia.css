@@ -1,6 +1,5 @@
 .register-ideia-container {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,4 +129,10 @@
 
 .link-item-menu {
     background: var(--background-secondary);
+}
+
+@media (min-width: 720px) {
+    .register-ideia-container {
+        width: 98.7vw;
+    }
 }
