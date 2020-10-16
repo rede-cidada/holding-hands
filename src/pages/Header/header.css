@@ -32,7 +32,7 @@ a {
 }
 
 .logo-header-img{
-    width: 40px;
+    width: 60px;
 }
 
 .nav{
@@ -48,7 +48,8 @@ a {
 }
 
 .nav-itens:hover{
-    background: var(--background-btn-user);
+
+    background: var(--hover-header);
 }
 
 .link-nav-itens{
@@ -66,8 +67,8 @@ a {
     align-items: center;
     border: none;
 
-    width: 2.17rem;
-    height: 2rem;
+    width: 2rem;
+    height: 1.17rem;
     cursor: pointer;
     padding: 0;
     outline: none;
@@ -76,10 +77,9 @@ a {
 }
 
 .menu-btn {   
+    background:var(--color-primary);
 
-    background: #fff;
-
-    width: 2rem;
+    width: 1.3rem;
     height: 0.20rem;
     border-radius: 10px;
     

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Baloo+2:wght@500&family=Poppins:wght@300;400&display=swap');
+
 :root {
-    --background-primary: #009FFD;
+    --background-primary: #1388cc;
     --background-secondary: #085886;
     --color-primary: #F9F9F9;
     --color-basic: #000;
@@ -9,6 +11,7 @@
     --background-btn-user: #0b5681;
     --background-btn-idea: #862d2d;
     --background-idea: #c24c4c;
+    --hover-header: #1c6996;
 }
 
 * {

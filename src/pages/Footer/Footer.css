@@ -6,8 +6,10 @@
     justify-content: center;
     align-items: center;
 
-    background: var(--background-secondary);
-    font: 200 0.9rem MuseoModerno;
+    background: var(--hover-header);
+    font-family: 'Alef', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
     padding: 10px 0;
 }
 
@@ -59,6 +61,7 @@
 
 @media(min-width:720px){
     .footer-conatiner{
+         height: 50px;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 30px;
@@ -71,6 +74,7 @@
     }
 
     .footer-devs{
-        padding: 0 10px;
+        display: none;
+        /*padding: 0 10px;*/
     }
 }

@@ -40,12 +40,6 @@ li{
     list-style: none;
 }
 
-.nav-bar{
-    position: absolute;
-    top:10px;
-    right: 20px;
-}
-
 .item-user{
     border: 2px solid #ffffff;
     border-radius: 50%;
@@ -63,8 +57,14 @@ li{
     
     margin: 15px 0;
 
-    font: 500 1.8rem MuseoModerno;
+    font-family: 'Alef', sans-serif;
+    font-size: 2rem;
     color: var(--color-primary);
+}
+
+.landing-line {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.3rem;
 }
 
 .logo-container img{
@@ -131,22 +131,25 @@ li{
 @media(min-width:900px){
     .landing-all{
         width: 98.7vw;
+        margin-top: 10px;    
     }
 
     .landing-container{
-
+        height: 70vh;
         display: grid;
-        grid-template-areas:"logo land-back"
-                            "paragrafo land-back"
-                            "btn land-back" ;
-        
-        gap: 20px;
+        grid-template-areas:"paragrafo land-back"
+                            "btn land-back" ;                        
+        gap: 30px;
     }
 
     .logo-container{
-        font-size: 2.5rem;
+        font-size: 3rem;
         grid-area: logo;
         justify-content: flex-start;
+    }
+
+    .landing-line {
+        font-size: 20rem;
     }
 
     .landing-container p{
@@ -169,7 +172,7 @@ li{
 
     .landing-background{
         display:flex;
-        width: 23rem;
+        width: 20rem;
         grid-area: land-back;
     }
 }

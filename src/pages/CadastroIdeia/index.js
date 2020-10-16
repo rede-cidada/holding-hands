@@ -74,15 +74,15 @@ const RegisterIdeias = () => {
                         </select>
                 </div>
 
+                <div className="register-ideia-btn-div">
+                    <button className="link-item-menu" type="submit" onClick={ () => alert('Não foi possível realizar o cadastro') }>Cadastrar</button>
+                    <Link className="link-item-menu" to="/">Voltar</Link>                     
+                </div>
+
                 <div className="register-ideia-div">  
                     <label className="register-ideia-label" for="Descricao">Descrição:</label>
                     <textarea className="register-ideia-textarea" nome="Descricao"></textarea>
-                </div>
-                    
-                 <div className="register-ideia-btn-div">
-                    <button className="link-item-menu" type="submit" onClick={ () => alert('Não foi possível realizar o cadastro') }>Cadastrar</button>
-                    <Link className="link-item-menu" to="/">Voltar</Link>                     
-                </div>                                       
+                </div>                                                       
             </form>
         </section>
     )
