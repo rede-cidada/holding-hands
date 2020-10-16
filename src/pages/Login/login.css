@@ -1,6 +1,7 @@
-.container-cadastro {
+.container-login {
     height: calc(100% - 70px);
     width: 100vw;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +52,82 @@
     font-size: 1.2rem;
     padding-bottom: 5px;
     font-family: 'Poppins', sans-serif;
+}
+
+.error{
+    color: #fff;
+}
+
+.box-sucesso {
+    width: 100%;
+    height: calc(100% + 70px);
+    display: none;
+    background: rgba(0, 0, 0, 0.842);
+    z-index: 10;
+}
+
+.container-modal{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 3px;
+    background-color: var(--background-secondary);
+}
+
+.modal-header{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.modal-header img{
+    width: 40px;
+}
+
+.title-sucesso {
+    padding-left: 10px;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.descricao-sucesso-all{
+    width: 90%;
+}
+
+.descricao-sucesso {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.true-sucesso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.login-close {
+    display: none;
+}
+.return-btn{
+    margin: 15px 0;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--background-btn-light);
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    border-radius: 3px;
 }
 
 .form-btn-container{
@@ -119,8 +196,9 @@
 }
 
 @media (min-width: 750px) {
-    .container-cadastro {
-        width: 98.7vw;
+    .container-login {
+        width: 100vw;
+        margin-top: 0;
     }
 }
 

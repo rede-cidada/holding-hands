@@ -16,7 +16,7 @@ a {
     background: var(--background-secondary);
 
     position: fixed;
-    z-index: 10;
+    z-index: 9;
 }
 
 .logo-header{
