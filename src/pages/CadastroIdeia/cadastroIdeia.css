@@ -72,6 +72,11 @@
     width: 100%;
     height: 2rem;
     margin-top: 5px;
+    color: #0f0f0f;
+}
+
+.ideia-select option{
+    color: #0f0f0f;
 }
 
 .ideia-select-1{

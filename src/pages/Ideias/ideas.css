@@ -27,6 +27,7 @@
     border-radius: 9px;
     cursor: pointer;
     outline: none;
+    color: #0f0f0f;
 }
 
 .all {
@@ -43,6 +44,7 @@
     border-radius: 9px;
     margin-top: 1rem;
     outline: none;
+    color: #0f0f0f;
 }
 
 .search-div {
@@ -58,6 +60,7 @@
     border: none;    
     border-radius: 9px 0px 0px 9px;
     outline: none;
+    color: #0f0f0f;
 }
 
 .search-btn {
@@ -211,6 +214,8 @@
 
 .btn-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
