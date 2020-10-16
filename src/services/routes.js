@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Landing from '../pages/landing';
+import Landing from '../pages/Landing';
 import Ideias from '../pages/Ideias';
 import CadastroUsuario from '../pages/CadastroUsuario';
 import DoacaoObjetos from '../pages/DoacaoObjetos';
