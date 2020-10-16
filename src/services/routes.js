@@ -4,7 +4,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Landing from '../pages/landing';
 import Ideias from '../pages/Ideias';
-import DescricaoIdeia from '../pages/DescricaoIdeia';
 import CadastroUsuario from '../pages/CadastroUsuario';
 import DoacaoObjetos from '../pages/DoacaoObjetos';
 import Login from '../pages/Login';
@@ -16,7 +15,6 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route path="/lista-de-ideias" component={Ideias} />
-      <Route path="/ideia" component={DescricaoIdeia} />
       <Route path="/cadastro-de-usuario" component={CadastroUsuario} />
       <Route path="/doacao-de-objetos" component={DoacaoObjetos} />
       <Route path="/login" component={Login} />

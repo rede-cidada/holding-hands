@@ -1,238 +1,126 @@
-.register-ideia-container {
+.container-register-ideia{
     width: 100vw;
+    margin-top: 70px;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background: var(--background-primary);
-    padding: 70px 5% 5% 5%;
-}
-
-.register-ideia-title {
-    font-family: 'Baloo 2', cursive;
-    font-weight: 300;
-    font-size: 1.5rem;
-    padding: 25px 0;
-}
-
-.register-ideia-form {
-    width: 100vw;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 6%;
-}
 
-.register-ideia-div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: .5rem;
-}
-
-.register-ideia-location {
-    width: auto;
-}
-
-.register-ideia-label {
-    color: var(--color-primary);
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    padding: 0 .5rem;
-}
-
-.register-ideia-input {
-    width: 100%;
-    max-width: 400px;
-    height: 1.6rem;
-    border: none;
-    border-radius: 4px;
-}
-
-.registerideia-nome-endereco {
-    width: 80%;
-    max-width: 700px;
-}
-
-.registerideia-cidade-uf {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.registerideia-input-nome {
-
-}
-
-.registerideia-input-endereco {
-
-}
-
-.registerideia-input-telefone {
-
-}
-
-.registerideia-input-email {
-
-}
-
-.registerideia-input-cidade {
-    width: 5rem;
-    height: 1.4rem;
-    border: none;
-    border-radius: 4px;
-}
-
-.registerideia-input-uf {
-    width: 3rem;
-    height: 1.4rem;
-    border: none;
-    border-radius: 4px;
-}
-
-.register-ideia-select {
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 4px;
-}
-
-.registerideia-select-tipo {
-    width: 7.2rem;
-    height: 1.4rem;
-}
-
-.registerideia-select-categorias {
-    width: 8.5rem;
-    height: 1.4rem;
-}
-
-.register-ideia-textarea {
-    width: 9rem;
-    height: 1.4rem;
-    border: none;
-    border-radius: 4px;
-}
-
-.register-ideia-btn-div {
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4%;
-}
-
-.link-item-menu {
-    width: 5rem;
-    height: 2rem;
-    font-family: "Poppins", sans-serif;
-    font-size: .5;
-    font-weight: 300;
-    border-radius: 4px;
-    border: none;    
-    background: var(--background-btn-user);
-    margin: 1% 3%;
-    transition: .4s;
-}
-
-.link-item-menu {
     background: var(--background-secondary);
 }
 
-@media (min-width: 720px) {
-    .register-ideia-container {
-        width: 98.7vw;
-        padding: 8% 5%;
-    }
+.container-register-title{
+    font-size: 2rem;
+    padding: 15px 0;
+}
 
-    .register-ideia-title {
-        font-size: 2rem;
-    }
-    
-    .register-ideia-form {
+.container-ideia-dados{
+    width: 85%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    }
+.container-ideia-input{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
 
-    .registerideia-nome-endereco {
-        display: flex;
-        flex-direction: row;
-    }
+.container-ideia-label{
+    font-size: 1rem;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
 
-    .registerideia-nome-endereco {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .register-ideia-div {
+.ideia-input{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    padding: 8px;
+    background-color: var(--color-primary);
+    color: #161414;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
 
-    }
-    
-    .register-ideia-label {
+.container-ideia-dados2{
+    width: 85%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
-    }
-    
-    .register-ideia-input {
+.container-ideia-input2{
+    width: 100%;
+    margin-right: 5px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
 
-    }
-    
-    .registerideia-input-nome {
+.ideia-select{
+    width: 100%;
+    height: 2rem;
+    margin-top: 5px;
+}
 
-    }
-    
-    .registerideia-input-endereco {
+.ideia-select-1{
+    margin-right: 5px;
+}
 
-    }
-    
-    .registerideia-input-telefone {
+.ideia-textarea{
+    width: 100%;
+    height: 9rem;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    padding: 8px;
+    background-color: var(--color-primary);
+    color: #161414;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
 
-    }
-    
-    .registerideia-input-email {
+.container-ideia-btn{
+    width: 12rem;
+    height: 3rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
 
-    }
-    
-    .registerideia-cidade-uf {
+    background: var(--background-btn-secondary-light);
+    border-radius: 9px;
 
-    }
-    
-    .registerideia-input-cidade {
+    font: 700 1rem Poppins;
 
-    }
-    
-    .registerideia-input-uf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    }
-    
-    .register-ideia-select {
+    border: none;
+    outline: none;
+    color: var(--color-primary);
 
-    }
-    
-    .registerideia-select-tipo {
+    transition: background 0.4s;
+}
 
-    }
-    
-    .registerideia-select-categorias {
+.container-ideia-btn:hover {
+    background :var(--background-btn-secondary);
+}
 
-    }
-    
-    .register-ideia-textarea {
 
-    }
-    
-    .register-ideia-btn-div {
-
-    }
-    
-    .link-item-menu {
-
-    }
-    
-    .link-item-menu {
-
+@media(min-width:720px){
+    .container-register-ideia{
+        width: 98.72vw;
     }
 }

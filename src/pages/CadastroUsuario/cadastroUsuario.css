@@ -1,11 +1,12 @@
 .container-cadastro {
     margin-top: 70px;
     height: 100%;
-    width: 100vw;
+    width: 98.72vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: var(--background-secondary);
 }
 
 .title-cadastro {

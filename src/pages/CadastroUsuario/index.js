@@ -2,6 +2,8 @@ import React from "react";
 import "./cadastroUsuario.css";
 
 const CadastroUsuario = () => {
+
+    
     return(        
         <section class='container-cadastro'>       
             <h2 class='title-cadastro'>Cadastro</h2>

@@ -27,7 +27,7 @@ const Login= () => {
         setSenha(e.target.value)
     }
 
-    const cadastrar2 = (event) => {
+    const cadastrar = (event) => {
         event.preventDefault();
 
         storage.push({ email: email, senha: senha });             
@@ -61,7 +61,7 @@ const Login= () => {
                         Senha
                     </label>
                     <input class='input-cadastro' type="password" id="senha" name="senha"  onChange={senhaChange} 
-                    placeholder="Senha"  
+                    placeholder="Senha"
                     ref={register({
                         minLength: 8,
                         maxLength: 10,
@@ -76,14 +76,14 @@ const Login= () => {
                 
                 <div class='form-btn-container'>
                     <button class='btn-cadastro' type="submit">
-                        <div className="btn-content" onClick={cadastrar2} type="submit">
+                        <div className="btn-content" onClick={cadastrar} type="submit">
                             Entrar
                         </div>
                     </button>
                 </div>               
             </form>
 
-            <div className={`box-sucesso ${sucesso ? 'true-sucesso' : ''}`}>
+            <div className={`container-sucesso ${sucesso ? 'true-sucesso' : ''}`}>
                 <div className="container-modal">
                     <div className="modal-header">
                         <img src={Sucess}/><h4 className="title-sucesso">Sucesso</h4>
@@ -91,7 +91,9 @@ const Login= () => {
                     <div className="descricao-sucesso-all">
                         <p className="descricao-sucesso">Chegou a hora de transformar o mundo!</p>
                     </div>
+                    
                         <Link to='/' className="return-btn">Home</Link>
+
                 </div>
             </div>
         </div>

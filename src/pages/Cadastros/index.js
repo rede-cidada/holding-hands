@@ -28,6 +28,19 @@ const Cadastros = () => {
 
                 <Link to="/login" className="btn-register btn-idea">Faça Login</Link>
             </div>
+
+            <div className={`box-sucesso ${sucesso ? 'true-sucesso' : ''}`}>
+                <div className="container-modal">
+                    <div className="modal-header">
+                        <img src={Sucess}/><h4 className="title-sucesso">Sucesso</h4>
+                    </div>
+                    <div className="descricao-sucesso-all">
+                        <p className="descricao-sucesso">Chegou a hora de transformar o mundo!</p>
+                    </div>
+                        <Link to='/' className="return-btn">Home</Link>
+                </div>
+            </div>
+            
         </section>
     )
 }
