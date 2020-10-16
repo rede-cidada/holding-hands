@@ -35,7 +35,7 @@ const Header = () => {
                     </li>
                     
                     <li class="nav-itens">
-                        <Link className="link-nav-itens" to="/login">LOGIN</Link>
+                        <Link className="link-nav-itens" to="/Login">LOGIN</Link>
                     </li>
                     <li class="nav-itens">                        
                         <Link className="link-nav-itens" to="/cadastro-de-usuario">CADASTRAR-SE</Link>                        
