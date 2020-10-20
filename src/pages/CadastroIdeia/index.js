@@ -71,7 +71,7 @@ const RegisterIdeias = () => {
                     <option selected>Tipo de Ajuda</option>
                     <option>Financeira</option>
                     <option>Objetos</option>
-                    <option>volutária</option>                    
+                    <option>Todas</option>                    
                 </select>
             </div>
 

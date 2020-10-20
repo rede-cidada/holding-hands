@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./landing.css";
+import "./landingPage.css";
 
 import LandingBackground from "../../assets/img/landing/landing-background.svg";
 import Heart from "../../assets/img/landing/heart.svg";
 import Lamp from "../../assets/img/landing/lamp.svg";
 
-const Landing = () => {
+const LandingPage = () => {
     return(
         <div className="landing-all">
             <div className="landing-container">
@@ -37,4 +37,4 @@ const Landing = () => {
     )
 }
 
-export default Landing;
+export default LandingPage;
